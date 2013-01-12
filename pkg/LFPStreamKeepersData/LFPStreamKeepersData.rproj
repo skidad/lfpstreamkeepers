@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="RTarget" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{f4d370c7-8581-4267-9f55-f62fa05af367}</ProjectGuid>
+    <AssemblyName>LFPStreamKeepersData</AssemblyName>
+    <Name>LFPStreamKeepersData</Name>
+    <RootNamespace>LFPStreamKeepersData</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="DESCRIPTION">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\LoadData.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\SetupAndRun.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="NAMESPACE">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="NEWS">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="README">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="R\plotBIBI.R">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="man" />
+    <Folder Include="inst" />
+    <Folder Include="R" />
+  </ItemGroup>
+  <Target Name="RTarget">
+    <Message Text="Executing R script" />
+  </Target>
+</Project>

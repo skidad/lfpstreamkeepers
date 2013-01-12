@@ -1,0 +1,9 @@
+Package: LFPStreamKeepersData
+Version: 0.0-2
+Title: Lake Forest Park StreamKeepers Data
+Author: Derek Brown <skidad@acm.org>
+Maintainer: Derek Brown <skidad@acm.org>
+Description: Lake Forest Park Streams Quality and Benthic Data
+License: licenseInfo
+Depends: R (>= 2.13.1)
+
