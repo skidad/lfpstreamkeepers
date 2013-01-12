@@ -1,5 +1,8 @@
 NEWS/Change Log for LFPStreamKeepersData package
 ------------------------------------------------
+0.0-3 2013-01-11 
+    o Added Lyon Fiene 2007 load data function 
+    
 0.0-2 2012-12-23 
     o Adding Benthic Details Data. 
     

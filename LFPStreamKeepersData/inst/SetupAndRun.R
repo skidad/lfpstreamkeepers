@@ -17,6 +17,7 @@ odbcClose(excel.connect)
 
 source("LFPStreamKeepersData/inst/LoadData.R")
 v<-Lyon_at_fiene_scoring_2006()
+v2<-Lyon_at_fiene_scoring_2007()
 
 ##################
 library(ggplot2)

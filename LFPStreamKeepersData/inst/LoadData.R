@@ -29,3 +29,18 @@ Lyon_at_fiene_scoring_2006 <- function(){
     retval <- list(rep1=rep1,rep2=rep2,rep3=rep3,composite=composite)
     return( retval )
 }
+
+Lyon_at_fiene_scoring_2007 <- function(){
+	# this one does not split into reps, but want to specify a factor to differentiate reps.
+    file.name<-system.file("extdata/BIBI/2007/Lyon_Creek_Fiene_Scoring_2007.xls",package="LFPStreamKeepersData")
+    theData <- readWorksheet(loadWorkbook(file.name),sheet=1,startRow=2, startCol=1)
+	
+    theData <- theData[,colSums(is.na(theData))<nrow(theData)] # Drop Columns that are all NA
+	theData <- theData[-which(apply(theData,1,function(x)all(is.na(x)))),] # Drop Rows that are all NA
+    colNames <- unlist(theData[2,])
+    names(theData) <- colNames
+	# Still want to drop the rows with Metric in them
+	# And want to put in the ffactor to identify the Rep.
+
+    return( theData )
+}
