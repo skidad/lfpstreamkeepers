@@ -40,7 +40,7 @@ Lyon_at_fiene_scoring_2007 <- function(){
     colNames <- unlist(theData[2,])
     names(theData) <- colNames
 	# Still want to drop the rows with Metric in them
-	# And want to put in the ffactor to identify the Rep.
+	# And want to put in the factor to identify the Rep.
 
     return( theData )
 }

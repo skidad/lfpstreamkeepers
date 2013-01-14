@@ -7,8 +7,9 @@
 # Emacs Temp files
 *~
 
-# Revolution Analytics RPE Work file
+# Revolution Analytics file
 *.iR
+*.Rsuo
 
 # Compiled source #
 ###################
