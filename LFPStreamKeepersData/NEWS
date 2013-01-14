@@ -1,5 +1,8 @@
 NEWS/Change Log for LFPStreamKeepersData package
 ------------------------------------------------
+0.0-4 2013-01-13 
+    o Added readScoringXLS load data function 
+    
 0.0-3 2013-01-11 
     o Added Lyon Fiene 2007 load data function 
     

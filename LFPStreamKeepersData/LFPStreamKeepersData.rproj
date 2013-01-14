@@ -35,6 +35,9 @@
     <Content Include="README">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="R\loadLFPData.R">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="R\plotBIBI.R">
       <SubType>Content</SubType>
     </Content>
