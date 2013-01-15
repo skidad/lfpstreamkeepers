@@ -10,8 +10,14 @@ readScoringXls <- function( fileName ){
     colNames <- unlist(theData[2,])
     names(theData) <- colNames
 	theData <- subset( theData, Metric!="Metric" ) # Drop the rows with Metric in them
+	theData <- theData[,-c(4)] # really want to drop un-named colums
+	theData$Replicate <- as.factor(rep(NA,nrow(theData)))
+	levels(theData$Replicate) <- c("Rep1", "Rep2", "Rep3", "Composite")
+	start <- pmatch("Rep. 3", theData$Total)
+	finish <- start + 10
+	theData$Replicate[start:finish] <- rep("Rep3",11)
+
 	# And want to put in the factor to identify the Rep.
-	# wand to drop un-named colums,
 	# want to clean up total column.
 
     return( theData )

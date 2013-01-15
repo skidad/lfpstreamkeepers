@@ -1,5 +1,8 @@
 NEWS/Change Log for LFPStreamKeepersData package
 ------------------------------------------------
+0.0-5 2013-01-14 
+    o Added Replicate column to readScoringXLS.
+    
 0.0-4 2013-01-13 
     o Added readScoringXLS load data function 
     
