@@ -15,10 +15,7 @@ odbcClose(excel.connect)
 
 #################
 
-source("LFPStreamKeepersData/inst/LoadData.R")
-v<-Lyon_at_fiene_scoring_2006()
-v2<-Lyon_at_fiene_scoring_2007()
-
+lyonFiene2006 <- readScoringXls( "extdata/BIBI/2006/Lyon_at_fiene_scoring_2006.xls")
 lyonFiene2007 <- readScoringXls( "extdata/BIBI/2007/Lyon_Creek_Fiene_Scoring_2007.xls" )
 
 ##################

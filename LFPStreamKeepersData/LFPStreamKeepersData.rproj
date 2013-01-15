@@ -20,9 +20,6 @@
     <Content Include="DESCRIPTION">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="inst\LoadData.R">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="inst\SetupAndRun.R">
       <SubType>Content</SubType>
     </Content>
