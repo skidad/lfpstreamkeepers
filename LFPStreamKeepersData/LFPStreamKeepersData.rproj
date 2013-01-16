@@ -20,6 +20,9 @@
     <Content Include="DESCRIPTION">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="inst\loadBIBI.R">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="inst\SetupAndRun.R">
       <SubType>Content</SubType>
     </Content>
