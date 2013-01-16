@@ -6,6 +6,7 @@
 
 # Emacs Temp files
 *~
+\#*\#
 
 # Revolution Analytics file
 *.iR
