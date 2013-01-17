@@ -17,7 +17,7 @@ readScoringXls <- function( fileName ){
 	levels(theData$Replicate) <- c("Rep1", "Rep2", "Rep3", "Composite")
 	repStarts <- grep("Rep|Composite",theData$Total)
 	
-	theData$Replicate[repStarts[1]:repStarts[2]-1] <- rep("Rep1",(repStarts[2]-repStarts[1]+1))
+	theData$Replicate[repStarts[1]:repStarts[2]-1] <- rep("Rep1",(repStarts[2]-repStarts[1]))
 	theData$Replicate[repStarts[2]:repStarts[3]-1] <- rep("Rep2",(repStarts[3]-repStarts[2]+1))
 	theData$Replicate[repStarts[3]:repStarts[4]-1] <- rep("Rep3",(repStarts[4]-repStarts[3]+1))
 	theData$Replicate[repStarts[4]:nrow(theData)] <- rep("Composite",(nrow(theData)-repStarts[4]+1))

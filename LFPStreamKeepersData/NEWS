@@ -1,11 +1,18 @@
 NEWS/Change Log for LFPStreamKeepersData package
 ------------------------------------------------
+
+0.1-0 2013-01-16
+    o loadBIBI.r loads all of the BIBI scoring data into bibiScoringData
+      object.  Now ready to start working on plotting this data.
+    o Added 2008 BIBI data.
+
 0.0-5 2013-01-14 
     o Added Replicate column to readScoringXLS, assigned replicate values.
     o Added readScoringXLS to namespace.
 
 0.0-4 2013-01-13 
-    o Added readScoringXLS load data function 
+    o generalized LyonFiene2007 load data function to
+      Added readScoringXLS load data function.
     
 0.0-3 2013-01-11 
     o Added Lyon Fiene 2007 load data function 
