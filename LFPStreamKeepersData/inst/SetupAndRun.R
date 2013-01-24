@@ -17,6 +17,8 @@ odbcClose(excel.connect)
 
 lyonFiene2006 <- readScoringXls( "extdata/BIBI/2006/Lyon_at_fiene_scoring_2006.xls")
 lyonFiene2007 <- readScoringXls( "extdata/BIBI/2007/Lyon_Creek_Fiene_Scoring_2007.xls" )
+##################
+qd <- loadQualityData()
 
 ##################
 library(ggplot2)

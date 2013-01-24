@@ -26,6 +26,9 @@
     <Content Include="inst\SetupAndRun.R">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="man\Datasets.Rd">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="NAMESPACE">
       <SubType>Content</SubType>
     </Content>
@@ -36,6 +39,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="R\loadLFPData.R">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="R\loadQualityData.R">
       <SubType>Content</SubType>
     </Content>
     <Content Include="R\plotBIBI.R">

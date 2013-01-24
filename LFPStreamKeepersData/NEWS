@@ -1,5 +1,8 @@
 NEWS/Change Log for LFPStreamKeepersData package
 ------------------------------------------------
+0.1-1 2013-01-23
+    o Added rawQualityData.csv, skeliton of data set documentation.
+      rawQualityData.csv needs cleaning: read.table doesn't like it. 
 
 0.1-0 2013-01-16
     o loadBIBI.r loads all of the BIBI scoring data into bibiScoringData
