@@ -20,6 +20,159 @@
     <Content Include="DESCRIPTION">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="inst\extdata\BIBI\2004\lyon_2004.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2004\mcaleer_2004.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2006\Lyon_at_35th_Scoring_2006.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2006\Lyon_at_Fiene_Scoring_2006.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2006\McAleer_Creek_at_Animal_Acres_Scoring_2006.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2006\McAleer_Creek_at_Perkins_Scoring_2006.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2007\Lyon_Creek_35th_29_Sept_2007.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2007\Lyon_Creek_35th_Scoring_2007.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2007\Lyon_Creek_Fiene_29_Sept_2007.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2007\Lyon_Creek_Fiene_Scoring_2007.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2007\McAleer_Creek_Animal_Acres_2007.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2007\McAleer_Creek_Animal_Acres_Scoring_2007.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2007\McAleer_Creek_Perkins_Way_2007.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2007\McAleer_Creek_Perkins_Way_Scoring_2007.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2008\Lyon at Fienes 2008 Scoring.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2008\Lyon Creek at 35 2008.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2008\Lyon Creek at Fienes 2008.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2008\Lyons Creek at 35 2008 Scoring.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2008\McAleer at Perkins 2008 Scoring.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2008\McAleer at Perkins 2008.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2008\McAleer Creek at Animal Acres 2008 Scoring.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2008\McAleer Creek at Animal Acres 2008.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2009\Lyon Creek at 35th Ave 10 Oct 2009.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2009\Lyon Creek at 35th Ave Scoring 2009.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2009\Lyon Creek at Fienes 10 Oct 2009.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2009\Lyon Creek at Fienes Scoring 2009.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2009\McAleer Creek at Animal Acres 10 Oct 2009.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2009\McAleer Creek at Animal Acres Scoring 2009.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2009\McAleer Creek at Perkins 26th 10 Oct 2009.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2009\McAleer Creek at Perkins Scoring 2009.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2010\Lyon Creek at 35th Ave 2010.xlsx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2010\Lyon Creek at 35th Ave Scoring 2010.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2010\Lyon Creek at Fienes 2010.xlsx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2010\Lyon Creek at Fienes Scoring 2010.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2010\McAleer Creek at Animal Acres 2010.xlsx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2010\McAleer Creek at Animal Acres Scoring 2010.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2010\McAleer Creek at Perkins 2010.xlsx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2010\McAleer Creek at Perkins Scoring 2010.xls">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2011\LFP_3v8_Data.xlsx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2012\Animal Acres 2012.xlsx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2012\Animal_Acres_2012_Scoring.xlsx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2012\Lyon at 178th 2012.xlsx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2012\Lyon at 35th 2012.xlsx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2012\Lyons Creek at 178th 2012 Scoring.xlsx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2012\Lyons Creek at 35th 2012 Scoring.xlsx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2012\perkins way 2012 Scoring.xlsx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\2012\Perkins Way 2012.xlsx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\data.xlsx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\BIBI\rawQualityData.csv">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\data.xlsx">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="inst\extdata\rawQualityData.csv">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="inst\loadBIBI.R">
       <SubType>Content</SubType>
     </Content>
@@ -49,6 +202,17 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="inst\extdata" />
+    <Folder Include="inst\extdata\BIBI" />
+    <Folder Include="inst\extdata\BIBI\2004" />
+    <Folder Include="inst\extdata\BIBI\2005" />
+    <Folder Include="inst\extdata\BIBI\2006" />
+    <Folder Include="inst\extdata\BIBI\2007" />
+    <Folder Include="inst\extdata\BIBI\2008" />
+    <Folder Include="inst\extdata\BIBI\2009" />
+    <Folder Include="inst\extdata\BIBI\2010" />
+    <Folder Include="inst\extdata\BIBI\2011" />
+    <Folder Include="inst\extdata\BIBI\2012" />
     <Folder Include="man" />
     <Folder Include="inst" />
     <Folder Include="R" />
