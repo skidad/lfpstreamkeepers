@@ -2,6 +2,9 @@ NEWS/Change Log for LFPStreamKeepersData package
 ------------------------------------------------
 0.1-2 2013-01-25
 	o Made BIBI data visible to the Revo Project.
+	o Normalizing rawQualityData.csv
+	  Removed aprostophes (single quotes) from reach names,
+	  Removed trailing commas. 
 	
 0.1-1 2013-01-23
     o Added rawQualityData.csv, skeliton of data set documentation.

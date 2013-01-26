@@ -18,10 +18,11 @@ odbcClose(excel.connect)
 lyonFiene2006 <- readScoringXls( "extdata/BIBI/2006/Lyon_at_fiene_scoring_2006.xls")
 lyonFiene2007 <- readScoringXls( "extdata/BIBI/2007/Lyon_Creek_Fiene_Scoring_2007.xls" )
 ##################
-options(width=140)
+options(width=180)
 
 qd <- loadQualityData()
-
+head(qd)
+qd
 ##################
 library(ggplot2)
 df1 <- data.frame(sex       = factor(c("Female","Female","Male","Male")),
