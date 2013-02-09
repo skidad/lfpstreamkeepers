@@ -1,8 +1,19 @@
 NEWS/Change Log for LFPStreamKeepersData package
 ------------------------------------------------
-0.1-1 2013-02-08
+
+0.1-3 2013-02-08
 	o plotBIBI.r - added Site.barplot() function
 	
+0.1-2 2013-01-25
+	o Made BIBI data visible to the Revo Project.
+	o Normalizing rawQualityData.csv
+	  Removed aprostophes (single quotes) from reach names,
+	  Removed trailing commas. 
+	
+0.1-1 2013-01-23
+    o Added rawQualityData.csv, skeliton of data set documentation.
+      rawQualityData.csv needs cleaning: read.table doesn't like it. 
+
 0.1-0 2013-01-16
     o loadBIBI.r loads all of the BIBI scoring data into bibiScoringData
       object.  Now ready to start working on plotting this data.
