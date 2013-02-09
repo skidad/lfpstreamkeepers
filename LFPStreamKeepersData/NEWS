@@ -1,5 +1,12 @@
 NEWS/Change Log for LFPStreamKeepersData package
 ------------------------------------------------
+0.1-3 2013-01-29
+    o Added 1/19/2013 data fto rawQualityData.csv
+	  - Dropped ratings columns because they shouuld be calculated.
+	  - Dropped Temp Celcius column because it can be calculated. 
+	  - Added Turbidity column: Need to go through old data and fix
+	    sky and turbidity data. 
+	  
 0.1-2 2013-01-25
 	o Made BIBI data visible to the Revo Project.
 	o Normalizing rawQualityData.csv

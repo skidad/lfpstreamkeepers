@@ -22,7 +22,15 @@ options(width=180)
 
 qd <- loadQualityData()
 head(qd)
-qd
+winter2013 <- subset(qd, Date == "1/19/2013" )
+write.table(winter2013)
+	
+print(xtable(winter2013), type="html")
+
+x <- as.matrix(format(winter2013))
+rownames(x) <- rep("", nrow(x))
+print(x, quote=FALSE, right=TRUE)
+
 ##################
 library(ggplot2)
 df1 <- data.frame(sex       = factor(c("Female","Female","Male","Male")),
