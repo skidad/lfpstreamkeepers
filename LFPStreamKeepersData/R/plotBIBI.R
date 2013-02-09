@@ -44,3 +44,21 @@ plotBIBI <- function( bibiDataCsv, createJpg = FALSE ) {
 
 	if ( createJpg ) dev.off()
 }
+
+
+Site.barplot <- function(CollectionSite = "mcAleerAcres")
+{
+    Val1 <- eval(parse(text=paste("as.numeric(bibiScoringData$y2006$",CollectionSite,"[bibiScoringData$y2012$",CollectionSite,"$Replicate=='Composite',3])")))   
+    Val2 <- eval(parse(text=paste("as.numeric(bibiScoringData$y2007$",CollectionSite,"[bibiScoringData$y2012$",CollectionSite,"$Replicate=='Composite',3])")))
+    Val3 <- eval(parse(text=paste("as.numeric(bibiScoringData$y2008$",CollectionSite,"[bibiScoringData$y2012$",CollectionSite,"$Replicate=='Composite',3])")))         
+    Val4 <- eval(parse(text=paste("as.numeric(bibiScoringData$y2009$",CollectionSite,"[bibiScoringData$y2012$",CollectionSite,"$Replicate=='Composite',3])")))
+    Val5 <- eval(parse(text=paste("as.numeric(bibiScoringData$y2010$",CollectionSite,"[bibiScoringData$y2012$",CollectionSite,"$Replicate=='Composite',3])")))
+    Val6 <- eval(parse(text=paste("as.numeric(bibiScoringData$y2012$",CollectionSite,"[bibiScoringData$y2012$",CollectionSite,"$Replicate=='Composite',3])")))
+   
+    height <- cbind(Year2006 = Val1, Year2007 = Val2, Year2008 = Val3, Year2009 = Val4, Year2010 = Val5, Year2012 = Val6)
+    barplot(height, col = c("darkgreen","blue","red","yellow","orange","pink","brown","black","lightblue","white"),beside = FALSE)
+    legend(locator(1), legend = c("Tot.","Ephem","Plecop","Trichop","Long-liv.","Intol.","%tol.","%pred.","Clinger","%dom."),
+    fill = c("darkgreen","blue","red","yellow","orange","pink","brown","black","lightblue","white"))
+    title(paste("Barplot of Score for",CollectionSite, "by Year and Site"), col="blue")
+}
+

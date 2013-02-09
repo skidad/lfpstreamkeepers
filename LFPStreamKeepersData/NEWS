@@ -1,5 +1,9 @@
 NEWS/Change Log for LFPStreamKeepersData package
 ------------------------------------------------
+
+0.1-4 2013-02-08
+	o plotBIBI.r - added Site.barplot() function
+	
 0.1-3 2013-01-29
     o Added 1/19/2013 data fto rawQualityData.csv
 	  - Dropped ratings columns because they shouuld be calculated.
