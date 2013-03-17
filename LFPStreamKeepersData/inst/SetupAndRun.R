@@ -1,15 +1,22 @@
 library( LFPStreamKeepersData )
-source("R/plotBIBI.R")
 source("inst/loadBIBI.R")
+source("R/plotBIBI.R")
 plotBIBI( system.file("extdata", "BIBI", 'bibiSummaryData.csv', package="LFPStreamKeepersData"),createJpg=FALSE )
-bibiScoringData
 Site.barplot(CollectionSite = "mcAleerAcres")
 Site.barplot(CollectionSite = "mcAleerPerkins")
 Site.barplot(CollectionSite = "lyon178th")
 Site.barplot(CollectionSite = "lyon35th")
 
-library(RODBC)
-file.name <- "LFPStreamKeepersData/extdata/BIBI/2006/Lyon_at_Fiene_Scoring_2006.xls"
+######
+# data accessor
+library( LFPStreamKeepersData )
+source("R/plotBIBI.R")
+source("inst/loadBIBI.R")
+
+bibiScoringData
+names(bibiScoringData)
+names(bibiScoringData$y2012)
+nil
 
 ################
 ## Connect to Excel File Pull and Format Data
@@ -35,7 +42,7 @@ qd <- loadQualityData()
 head(qd)
 winter2013 <- subset(qd, Date == "1/19/2013" )
 write.table(winter2013)
-	
+
 print(xtable(winter2013), type="html")
 
 x <- as.matrix(format(winter2013))

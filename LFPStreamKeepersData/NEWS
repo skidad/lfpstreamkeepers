@@ -1,7 +1,10 @@
 NEWS/Change Log for LFPStreamKeepersData package
 ------------------------------------------------
 
-0.1-4 2013-02-08
+0.1-6 2013-03-16
+        o Tweaked Site.barplot() to put legend on first bar.
+
+0.1-5 2013-03-16
         o Tweaked Site.barplot() to allow legend to work.
 
 0.1-4 2013-02-08
