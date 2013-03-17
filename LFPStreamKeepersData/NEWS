@@ -2,45 +2,47 @@ NEWS/Change Log for LFPStreamKeepersData package
 ------------------------------------------------
 
 0.1-4 2013-02-08
+        o Tweaked Site.barplot() to allow legend to work.
+
+0.1-4 2013-02-08
 	o plotBIBI.r - added Site.barplot() function
-	
+
 0.1-3 2013-01-29
     o Added 1/19/2013 data fto rawQualityData.csv
 	  - Dropped ratings columns because they shouuld be calculated.
-	  - Dropped Temp Celcius column because it can be calculated. 
+	  - Dropped Temp Celcius column because it can be calculated.
 	  - Added Turbidity column: Need to go through old data and fix
-	    sky and turbidity data. 
-	  
+	    sky and turbidity data.
+
 0.1-2 2013-01-25
 	o Made BIBI data visible to the Revo Project.
 	o Normalizing rawQualityData.csv
 	  Removed aprostophes (single quotes) from reach names,
-	  Removed trailing commas. 
-	
+	  Removed trailing commas.
+
 0.1-1 2013-01-23
     o Added rawQualityData.csv, skeliton of data set documentation.
-      rawQualityData.csv needs cleaning: read.table doesn't like it. 
+      rawQualityData.csv needs cleaning: read.table doesn't like it.
 
 0.1-0 2013-01-16
     o loadBIBI.r loads all of the BIBI scoring data into bibiScoringData
       object.  Now ready to start working on plotting this data.
     o Added 2008 BIBI data.
 
-0.0-5 2013-01-14 
+0.0-5 2013-01-14
     o Added Replicate column to readScoringXLS, assigned replicate values.
     o Added readScoringXLS to namespace.
 
-0.0-4 2013-01-13 
+0.0-4 2013-01-13
     o generalized LyonFiene2007 load data function to
       Added readScoringXLS load data function.
-    
-0.0-3 2013-01-11 
-    o Added Lyon Fiene 2007 load data function 
-    
-0.0-2 2012-12-23 
-    o Adding Benthic Details Data. 
-    
-0.0-1 2012-12-23 
-    o Initial Version 
+
+0.0-3 2013-01-11
+    o Added Lyon Fiene 2007 load data function
+
+0.0-2 2012-12-23
+    o Adding Benthic Details Data.
+
+0.0-1 2012-12-23
+    o Initial Version
     o LFP StreamKeepers bibiSummaryData.csv
-    

@@ -57,8 +57,9 @@ Site.barplot <- function(CollectionSite = "mcAleerAcres")
    
     height <- cbind(Year2006 = Val1, Year2007 = Val2, Year2008 = Val3, Year2009 = Val4, Year2010 = Val5, Year2012 = Val6)
     barplot(height, col = c("darkgreen","blue","red","yellow","orange","pink","brown","black","lightblue","white"),beside = FALSE)
-    legend(locator(1), legend = c("Tot.","Ephem","Plecop","Trichop","Long-liv.","Intol.","%tol.","%pred.","Clinger","%dom."),
-    fill = c("darkgreen","blue","red","yellow","orange","pink","brown","black","lightblue","white"))
+    # locator(1) is how steve was trying to locate legend, but it was hanging this thing.
+	legend( 6, y=33, legend = c("Tot.","Ephem","Plecop","Trichop","Long-liv.","Intol.","%tol.","%pred.","Clinger","%dom."),
+    		fill = c("darkgreen","blue","red","yellow","orange","pink","brown","black","lightblue","white"))
     title(paste("Barplot of Score for",CollectionSite, "by Year and Site"), col="blue")
 }
 

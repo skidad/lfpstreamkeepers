@@ -1,5 +1,12 @@
 library( LFPStreamKeepersData )
+source("R/plotBIBI.R")
+source("inst/loadBIBI.R")
 plotBIBI( system.file("extdata", "BIBI", 'bibiSummaryData.csv', package="LFPStreamKeepersData"),createJpg=FALSE )
+bibiScoringData
+Site.barplot(CollectionSite = "mcAleerAcres")
+Site.barplot(CollectionSite = "mcAleerPerkins")
+Site.barplot(CollectionSite = "lyon178th")
+Site.barplot(CollectionSite = "lyon35th")
 
 library(RODBC)
 file.name <- "LFPStreamKeepersData/extdata/BIBI/2006/Lyon_at_Fiene_Scoring_2006.xls"
@@ -21,6 +28,7 @@ lyonFiene2007 <- readScoringXls( "extdata/BIBI/2007/Lyon_Creek_Fiene_Scoring_200
 options(width=180)
 
 ##################
+source("R/plotBIBI.R")
 Site.barplot()
 ##################
 qd <- loadQualityData()
