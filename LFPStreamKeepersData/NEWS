@@ -1,6 +1,13 @@
 NEWS/Change Log for LFPStreamKeepersData package
 ------------------------------------------------
 
+0.2-0 2013-07-20
+        o New Data for July Testing.
+	o Moved SetUpAndRun.R out of package because it
+          operates directly on package.
+	o Added XLConnect, rJava to Recommended because
+	  loadBIBI requires them.
+
 0.1-6 2013-03-16
         o Tweaked Site.barplot() to put legend on first bar.
 

@@ -1,17 +1,26 @@
+gittop <- "c:/Users/Derek/Documents/Revolution/lfpstreamkeepers.git"
+setwd( gittop )
+system("R CMD build -install LFPStreamKeepersData")
+
+install.packages("XLConnect")
+install.packages("LFPStreamKeepersData_0.1-6.tar.gz", type="source" )
+
 library( LFPStreamKeepersData )
-source("inst/loadBIBI.R")
-source("R/plotBIBI.R")
+
 plotBIBI( system.file("extdata", "BIBI", 'bibiSummaryData.csv', package="LFPStreamKeepersData"),createJpg=FALSE )
+
+source(system.file("loadBIBI.R", package="LFPStreamKeepersData"))
 Site.barplot(CollectionSite = "mcAleerAcres")
 Site.barplot(CollectionSite = "mcAleerPerkins")
 Site.barplot(CollectionSite = "lyon178th")
 Site.barplot(CollectionSite = "lyon35th")
 
+
 ######
-# data accessor
+# data accessor: load the raw data.
 library( LFPStreamKeepersData )
-source("R/plotBIBI.R")
-source("inst/loadBIBI.R")
+source("LFPStreamKeepersData/R/plotBIBI.R")
+source("LFPStreamKeepersData/inst/loadBIBI.R")
 
 bibiScoringData
 names(bibiScoringData)
