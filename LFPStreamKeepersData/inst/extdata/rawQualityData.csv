@@ -1,39 +1,208 @@
-Stream,Reach,Num,Box,Date,Turbidity,Sky,T F,pH,Mg/l
-Lyon,35th - North of Ballanger,2,B,1/19/2013,Clear,overcast,43,7.5,12
-Bruggers,Bruggers Bog,4.1,R,1/19/2013,Clear,overcast,43,7.5,9
-Bruggers,Ballinger Way ,4.2,Y,1/19/2013,Clear,overcast,41,7.5,13
-Lyon,35th (South of 185th),,R,1/19/2013,Cloudy,overcast,40,7.5,11
-Lyon,Town Center,3,R,1/19/2013,Clear,overcast,41,7.5,12
-McAleer,196th (Under Road),12,G,1/19/2013,Cloudy,overcast,40,7.5,
-McAleer,182th by Big Retain. Wall,13,G,1/19/2013,Clear,overcast,41,7.5,12
-Brookside,28th (Grace Cole Park),15.2,Y,1/19/2013,Clear,overcast,42,7.5,12
-Hillside,35th Ave @ End,15.3,Y,1/19/2013,Clear,overcast,41,7.75,13
-Sheridan,37th NE (S of School),,B,1/19/2013,Cloudy,overcast,40,7.5,14
-McAleer,Blue Heron Park,14,G,1/19/2013,Clear,,41,7.5,13
-
-Lyon,35th - North of Ballinger,2,B,1/28/2012,Clear,,41,5.0,7.5,12
-Bruggers,Bruggers Bog,4.1,R,1/28/2012,Clear,42,5.6,7.5,9
-Bruggers,Ballinger Way,4.2,Y,1/28/2012,Clear,41,5.0,7.5,1
-Lyon,35th (South of 185th),R,1/28/2012,Clear,40,4.4,7.5,12
-Lyon,Town Center,3,R,1/28/2012,Clear,40,4.4,7.5,12.5
-McAleer,196th (Under Road),12,G,1/28/2012,Cloudy,40,4.4,7.5
-McAleer,182nd by Big Retain. Wall,13,G,1/28/2012,Cloudy,40,4.4,7.5,12
-Brookside,28th (Grace Cole Park),15.2,Y,1/28/2012,Clear,41.5,5.3,7.5,9.5
-Hillside,35th Ave @ End,15.3,Y,1/28/2012,Clear,40,4.4,7.5,11.5
-Sheridan,37th NE (S of School),B,1/28/2012,Clear,41,5.0,7.5,15
-McAleer,Blue Herron Park,14,G,1/28/2012,Clear,40,4.4,7.5,13
-Lyon,35th - North of Ballinger,2,B,7/21/2012,Clear,62,16.7,7.5,12
-Bruggers,Bruggers Bog,4.1,R,7/21/2012,Clear,61,16.1,7.5,10
-Bruggers,Ballinger Way,4.2,Y,7/21/2012,Clear,61,16.1,7.5,9
-Lyon,35th (South of 185th),R,7/21/2012,Clear,64,17.8,7.5,11.5
-Lyon,Town Center,3,R,7/21/2012,Clear,63,17.2,7.5,9
-McAleer,196th (Under Road),12,G,7/21/2012,Cloudy,66,18.9,8,9.5
-McAleer,182nd by Big Retain. Wall,13,G,7/21/2012,Cloudy,62,16.7,8,10
-Brookside,28th (Grace Cole Park),15.2,Y,7/21/2012,Clear,58,14.4,7,9
-Hillside,35th Ave @ End,15.3,Y,7/21/2012,Clear,60,15.6,7.5,9
-Sheridan,37th NE (S of School),B,7/21/2012,Clear,61,16.1,7.5,12
-McAleer,Blue Herron Park,14,G,7/21/2012,Clear,61,16.1
-
+Stream,Reach,Num,Box,Date,Sky,Turbidity,T F,pH,Mg/l
+Lyon,35th - North of Ballanger,2,B,7/20/2013,overcast,Clear,58,7.5,11
+Bruggers,Bruggers Bog,4.1,R,7/20/2013,overcast,Clear,60,7.5,11
+Bruggers,Ballinger Way ,4.2,Y,7/20/2013,overcast,Clear,60,7.5,7
+Lyon,35th (South of 185th),,R,7/20/2013,overcast,Clear,60,7.5,10
+Lyon,Town Center,3,R,7/20/2013,overcast,Clear,60,7.5,11
+McAleer,196th (Under Road),12,G,7/20/2013,overcast,Clear,60,8,10
+McAleer,182th by Big Retain. Wall,13,G,7/20/2013,overcast,Clear,60,7.5,10
+Brookside,28th (Grace Cole Park),15.2,Y,7/20/2013,overcast,Clear,58,7.5,10
+Hillside,35th Ave @ End,15.3,Y,7/20/2013,overcast,Clear,58,7.5,9
+Sheridan,37th NE (S of School),,B,7/20/2013,overcast,Clear,59,7.5,10.5
+McAleer,Blue Heron Park,14,G,7/20/2013,overcast,Clear,60,8,11
+,,,,,,,,,
+Lyon,35th - North of Ballanger,2,B,1/19/2013,overcast,Clear,43,7.5,12
+Bruggers,Bruggers Bog,4.1,R,1/19/2013,overcast,Clear,43,7.5,9
+Bruggers,Ballinger Way ,4.2,Y,1/19/2013,overcast,Clear,41,7.5,13
+Lyon,35th (South of 185th),,R,1/19/2013,overcast,Cloudy,40,7.5,11
+Lyon,Town Center,3,R,1/19/2013,overcast,Clear,41,7.5,12
+McAleer,196th (Under Road),12,G,1/19/2013,overcast,Cloudy,40,7.5,
+McAleer,182th by Big Retain. Wall,13,G,1/19/2013,overcast,Clear,41,7.5,12
+Brookside,28th (Grace Cole Park),15.2,Y,1/19/2013,overcast,Clear,42,7.5,12
+Hillside,35th Ave @ End,15.3,Y,1/19/2013,overcast,Clear,41,7.75,13
+Sheridan,37th NE (S of School),,B,1/19/2013,overcast,Cloudy,40,7.5,14
+McAleer,Blue Heron Park,14,G,1/19/2013,,Clear,41,7.5,13
+,,,,,,,,,
+Lyon,35th - North of Ballinger,2,B,1/28/2012,,Clear,41,5,7.5
+Bruggers,Bruggers Bog,4.1,R,1/28/2012,,Clear,42,7.5,9
+Bruggers,Ballinger Way,4.2,Y,1/28/2012,,Clear,41,7.5,1
+Lyon,35th (South of 185th),,R,1/28/2012,,Clear,40,7.5,12
+Lyon,Town Center,3,R,1/28/2012,,Clear,40,7.5,12.5
+McAleer,196th (Under Road),12,G,1/28/2012,,Cloudy,40,7.5,
+McAleer,182nd by Big Retain. Wall,13,G,1/28/2012,,Cloudy,40,7.5,12
+Brookside,28th (Grace Cole Park),15.2,Y,1/28/2012,,Clear,41.5,7.5,9.5
+Hillside,35th Ave @ End,15.3,Y,1/28/2012,,Clear,40,7.5,11.5
+Sheridan,37th NE (S of School),,B,1/28/2012,,Clear,41,7.5,15
+McAleer,Blue Herron Park,14,G,1/28/2012,,Clear,40,7.5,13
+Lyon,35th - North of Ballinger,2,B,7/21/2012,,Clear,62,7.5,12
+Bruggers,Bruggers Bog,4.1,R,7/21/2012,,Clear,61,7.5,10
+Bruggers,Ballinger Way,4.2,Y,7/21/2012,,Clear,61,7.5,9
+Lyon,35th (South of 185th),,R,7/21/2012,,Clear,64,7.5,11.5
+Lyon,Town Center,3,R,7/21/2012,,Clear,63,7.5,9
+McAleer,196th (Under Road),12,G,7/21/2012,,Cloudy,66,8,9.5
+McAleer,182nd by Big Retain. Wall,13,G,7/21/2012,,Cloudy,62,8,10
+Brookside,28th (Grace Cole Park),15.2,Y,7/21/2012,,Clear,58,7,9
+Hillside,35th Ave @ End,15.3,Y,7/21/2012,,Clear,60,7.5,9
+Sheridan,37th NE (S of School),,B,7/21/2012,,Clear,61,7.5,12
+McAleer,Blue Herron Park,14,G,7/21/2012,,Clear,61,,
+,,,,,,,,,
+Lyon,35th - North of Ballinger,2,B,1/21/2011,,Clear,46,7.5,14.5
+Bruggers,Bruggers Bog,4.1,R,1/21/2011,,Cloudy,46,7.5,11
+Bruggers,Ballinger Way ,4.2,Y,1/21/2011,,Cloudy,46,7.5,10
+Lyon,35th (South of 185th),,R,1/21/2011,,Cloudy,45,7,11
+Lyon,Town Center,3,R,01/24/2011 **,,Cloudy,45,7,13
+McAleer,196th (Under Road),12,G,1/21/2011,,Cloudy,42,7.5,13
+McAleer,182nd by Big Retain. Wall,13,G,1/21/2011,,Clear,42,7.5,12
+Brookside,28th (Grace Cole Park),15.2,Y,1/21/2011,,Clear,46,7.5,10
+Hillside,35th Ave @ End,15.3,Y,1/21/2011,,Cloudy,45,7.5,11
+Sheridan,37th NE (S of School),,B,1/21/2011,,Cloudy,47,7.5,14.5
+McAleer,Blue Herron Park,14,G,1/21/2011,,Clear,42,7.5,9
+Lyon,35th - North of Ballinger,2,B,7/16/2011,,Cloudy,58.5,7.5,12
+Bruggers,Bruggers Bog,4.1,R,7/16/2011,,Cloudy,60,7.5,9
+Bruggers,Ballinger Way ,4.2,Y,7/16/2011,,Brown,60,8,9
+Lyon,35th (South of 185th),,R,7/16/2011,,Cloudy,59,7.5,9
+Lyon,Town Center,3,R,7/16/2011,,Clear,60,7.5,9
+McAleer,196th (Under Road),12,G,7/16/2011,,Brown,60,7.5,10
+McAleer,182nd by Big Retain. Wall,13,G,7/16/2011,,Brown,60,7.5,10
+Brookside,28th (Grace Cole Park),15.2,Y,7/16/2011,,Clear,56,7.5,7.5
+Hillside,35th Ave @ End,15.3,Y,7/16/2011,,Cloudy,57,8,10
+Sheridan,37th NE (S of School),,B,7/16/2011,,Cloudy,58,7.5,11.5
+McAleer,Blue Herron Park,14,G,7/16/2011,,Brown,60,7.5,9.5
+,,,,,,,,,
+Lyon,35th - North of Ballinger,2,B,1/30/2010,,Clear,47,7.5,14
+Bruggers,Bruggers Bog,4.1,R,1/30/2010,,Clear,46,6.5,12
+Bruggers,Ballinger Way ,4.2,Y,1/30/2010,,Clear,48,7.5,11.5*
+Lyon,35th (South of 185th),,R,1/30/2010,,Cloudy,46,7.5,10
+Lyon,Town Center,3,R,1/30/2010,,Clear,46,7.5,11
+McAleer,196th (Under Road),12,G,1/30/2010,,Cloudy,45,7.5,12
+McAleer,182nd by Big Retain. Wall,13,G,1/30/2010,,Clear,45,7.5,11
+Brookside,28th (Grace Cole Park),15.2,Y,1/30/2010,,Clear,48,7.5,10.4*
+Hillside,35th Ave @ End,15.3,Y,1/30/2010,,Clear,46,7.5,12
+Sheridan,37th NE (S of School),,B,1/30/2010,,Clear,48,7.5,13
+McAleer,Blue Herron Park,14,G,1/30/2010,,Clear,45,7.5,14
+Lyon,35th - North of Ballinger,2,B,7/24/2010,,Clear,58,7.5,9.8*
+Bruggers,Bruggers Bog,4.1,R,7/24/2010,,Clear,58,7.5,9
+Bruggers,Ballinger Way ,4.2,Y,7/24/2010,,Clear,60,7.5,7
+Lyon,35th (South of 185th),,R,7/24/2010,,Clear,54,7.5,10*
+Lyon,Town Center,3,R,7/24/2010,,Clear,58,7.5,10.5
+McAleer,196th (Under Road),12,G,7/24/2010,,Cloudy,60,7.5,8
+McAleer,182nd by Big Retain. Wall,13,G,7/24/2010,,Cloudy,59,7.5,11
+Brookside,28th (Grace Cole Park),15.2,Y,7/24/2010,,Clear,57,7.5,10
+Hillside,35th Ave @ End,15.3,Y,7/24/2010,,Cloudy,57,7.5,7
+Sheridan,37th NE (S of School),,B,7/24/2010,,Clear,58,7.5,10*
+McAleer,Blue Herron Park,14,G,7/24/2010,,Cloudy,57,7.5,11
+,,,,,,,,,
+Lyon,35th - North of Ballinger,2,B,1/17/2009,,Clear,42,7.25,10
+Bruggers,Bruggers Bog,4.1,R,1/17/2009,,Clear,46,7,8.5
+Bruggers,Ballinger Way ,4.2,Y,1/17/2009,,Clear,41,7.5,10
+Lyon,35th (South of 185th),,R,1/17/2009,,Clear,41,7.25,5
+Lyon,Town Center,3,R,1/17/2009,,Clear,38,5,7.5
+McAleer,196th (Under Road),12,G,1/17/2009,,Clear,40.5,7.25,12.5
+McAleer,182nd by Big Retain. Wall,13,G,1/17/2009,,Clear,40.5,7.5,12.5
+Brookside,28th (Grace Cole Park),15.2,Y,1/17/2009,,Clear,42,"7,5",11
+Hillside,35th Ave @ End,15.3,Y,1/17/2009,,Clear,41,8,11
+Sheridan,37th NE (S of School),,B,1/17/2009,,Clear,42,7.5,13
+McAleer,Blue Herron Park,14,G,1/17/2009,,Clear,41,7.5,12
+Lyon,35th - North of Ballinger,2,B,7/15/2009,,Clear,61,7.5,11
+Bruggers,Bruggers Bog,4.1,R,7/15/2009,,Clear,61,7.5,11
+Bruggers,Ballinger Way ,4.2,Y,7/15/2009,,Clear,60,9.5,7.5
+Lyon,35th (South of 185th),,R,7/15/2009,,Clear,60,7.5,11
+Lyon,Town Center,3,R,7/15/2009,,Clear,61,7.5,11
+McAleer,196th (Under Road),12,G,7/15/2009,,Clear,60,7.5,11.5
+McAleer,182nd by Big Retain. Wall,13,G,7/15/2009,,Clear,59,8,12
+Brookside,28th (Grace Cole Park),15.2,Y,7/15/2009,,Clear,58,7.5,9
+Hillside,35th Ave @ End,15.3,Y,7/15/2009,,Clear,59,8,10
+Sheridan,37th NE (S of School),,B,7/15/2009,,Clear,61,7.5,12.5
+McAleer,Blue Herron Park,14,G,7/15/2009,,Clear,59,7.5,11.5
+,,,,,,,,,
+Lyon,35th - North of Ballinger,2,B,1/19/2008,,Clear,45,7.5,14
+Bruggers,Bruggers Bog,4.1,R,1/19/2008,,Clear,44,7.5,11.5
+Bruggers,Ballinger Way ,4.2,Y,1/19/2008,,Clear,42,7.5,12.5
+Lyon,35th (South of 185th),,R,1/19/2008,,Clear,44,7.5,11
+Lyon,Town Center,3,R,1/19/2008,,Clear,44,7.5,12
+McAleer,196th (Under Road),12,G,1/19/2008,,Clear,40,7.5,11
+McAleer,182nd by Big Retain. Wall,13,G,1/19/2008,,Clear,41,7.5,10
+Brookside,28th (Grace Cole Park),15.2,Y,1/19/2008,,Clear,43,7.5,12
+Brookside,28th Ave Restoration Site,,B,1/19/2008,,NS,,,
+Hillside,35th Ave @ End,15.3,Y,1/19/2008,,Cloudy,42,7.5,14
+Sheridan,37th NE (S of School),,B,1/19/2008,,Clear,43,7.5,12.5
+McAleer,Blue Herron Park,14,G,1/19/2008,,Clear,41,7.5,11
+Lyon,35th - North of Ballinger,2,B,7/19/2008,,Clear,57,7.5,11
+Bruggers,Bruggers Bog,4.1,R,7/19/2008,,Clear,57,7.5,8
+Bruggers,Ballinger Way ,4.2,Y,7/19/2008,,Clear,59,7.5,10
+Lyon,35th (South of 185th),,R,7/19/2008,,Clear,56,7.5,6.5
+Lyon,Town Center,3,R,7/19/2008,,Cloudy,56,7.5,9
+McAleer,196th (Under Road),12,G,7/19/2008,,Clear,58,7.5,12.5
+McAleer,182th by Big Retain. Wall,13,G,7/19/2008,,Clear,57,8,13.5
+Brookside,28th (Grace Cole Park),15.2,Y,7/19/2008,,Clear,58,7.5,8
+Brookside,28th Ave Restoration Site,,B,NS,,NS,NS,NS,NS
+Hillside,35th Ave @ End,15.3,Y,7/19/2008,,Cloudy,58,8,8.5
+Sheridan,37th NE (S of School),,B,7/19/2008,,Cloudy,57,7.5,11.5
+McAleer,Blue Herron Park,14,G,7/19/2008,,Clear,57,7.5,10
+,,,,,,,,,
+Lyon,35th - North of Ballanger,2,B,1/20/2007,,Clear,41,7.5,14
+Bruggers,Bruggers Bog,4.1,R,1/20/2007,,Clear,42,7.5,12.5
+Bruggers,Ballinger Way ,4.2,Y,1/20/2007,,Clear,41,7.5,9
+Lyon,35th (South of 185th),,R,1/20/2007,,Clear,42,7.5,12
+Lyon,Town Center,3,R,1/20/2007,,Clear,42,7.5,14
+McAleer,196th (Under Road),12,G,1/20/2007,,Brown,40,7.5,12.5
+McAleer,182th by Big Retain. Wall,13,G,1/20/2007,,Cloudy,40,7.5,13
+Brookside,28th (Grace Cole Park),15.2,Y,1/20/2007,,Clear,42,7.5,8
+Brookside,28th Ave Restoration Site,,B,1/20/2007,,NS,NS,NS,NS
+Hillside,35th Ave @ End,15.3,Y,1/20/2007,,Cloudy,40,7.5,11.5
+Sheridan,37th NE (S of School),,B,1/20/2007,,NS,44,7.5,13
+McAleer,Blue Herron Park,14,G,1/20/2007,,Cloudy,41,7.5,11.5
+Lyon,35th - North of Ballanger,2,B,7/21/2007,,Clear,62,7.5,12
+Bruggers,Bruggers Bog,4.1,R,7/21/2007,,Clear,62,7.5,8
+Bruggers,Ballinger Way ,4.2,Y,7/21/2007,,Clear,62,7.5,9
+Lyon,35th (South of 185th),,R,7/21/2007,,Clear,61,7.5,10
+Lyon,Town Center,3,R,7/21/2007,,Brown,61,7.5,10
+McAleer,196th (Under Road),12,G,7/21/2007,,Clear,60,7.5,10
+McAleer,182th by Big Retain. Wall,13,G,7/21/2007,,Clear,59,7.5,10
+Brookside,28th (Grace Cole Park),15.2,Y,7/21/2007,,Clear,58,7.5,9.5
+Brookside,28th Ave Restoration Site,,B,7/21/2007,,NS,NS,NS,NS
+Hillside,35th Ave @ End,15.3,Y,7/21/2007,,NS,60,7.5,7.5
+Sheridan,37th NE (S of School),,B,7/21/2007,,Cloudy,61,7.5,10.5
+McAleer,Blue Herron Park,14,G,7/21/2007,,Clear,58,7.5,10
+,,,,,,,,,
+Lyon,35th - North of Ballanger,2,B,1/21/2006,,Clear,46,7.5,13
+Bruggers,Bruggers Bog,4.1,R,1/21/2006,,Clear,45.5,7,11
+Bruggers,Ballinger Way ,4.2,Y,1/21/2006,,Clear,48,7.5,12
+Lyon,35th (South of 185th),,R,1/21/2006,,Clear,45,7.5,9
+Lyon,Town Center,3,R,1/21/2006,,Clear,45.5,7.5,8
+McAleer,196th (Under Road),12,G,1/21/2006,,Clear,44,7.5,11
+McAleer,182th by Big Retain. Wall,13,G,1/21/2006,,Clear,48,7.5,7
+Brookside,28th (Grace Cole Park),15.2,Y,1/21/2006,,Clear,47,7.5,10
+Brookside,28th Ave Restoration Site,,B,1/21/2006,,Clear,46,7.5,13
+Hillside,35th Ave @ End,15.3,Y,1/21/2006,,Cloudy,48,7.5,12
+Sheridan,37th NE (S of School),,B,1/21/2006,,Brown,46,7.5,14
+McAleer,Blue Herron Park,14,G,1/21/2006,,Clear,46,7.5,7
+Lyon,35th - North of Ballinger,2,B,4/15/2006,,Clear,49,7.5,13
+Bruggers,Bruggers Bog,4.1,R,4/15/2006,,Cloudy,48,7.5,11
+Bruggers,Ballinger Way ,4.2,Y,4/15/2006,,Cloudy,43,7.5,12
+Lyon,35th (South of 185th),,R,4/15/2006,,Clear,47,8,12
+Lyon,Town Center,3,R,4/15/2006,,Clear,48,8,11
+McAleer,196th (Under Road),12,G,4/15/2006,,Clear,54,7.5,13
+McAleer,182th by Big Retain. Wall,13,G,4/15/2006,,Clear,51,7.5,14
+Brookside,28th (Grace Cole Park),15.2,Y,4/15/2006,,Clear,44,7.5,11
+Brookside,* 28th Ave Restoration Site,,B,,,NS,NS,NS,NS
+Hillside,35th Ave @ End,15.3,Y,4/15/2006,,Cloudy,43,7.5,11
+Sheridan,37th NE (S of School),,B,4/15/2006,,Cloudy,48,7.5,12
+McAleer,Blue Herron Park,14,G,4/15/2006,,Clear,48,8,14
+Lyon,35th - North of Ballanger,2,B,7/15/2006,,Partly Cloudy,58,7.5,11
+Bruggers,Bruggers Bog,4.1,R,7/15/2006,,Partly Cloudy,59,7,8.5
+Bruggers,Ballinger Way ,4.2,Y,7/15/2006,,Partly Cloudy,58,7.5,10
+Lyon,35th (South of 185th),,R,7/15/2006,,Partly Cloudy,59,7,8.5
+Lyon,Town Center,3,R,7/15/2006,,Partly Cloudy,59,7,4
+McAleer,196th (Under Road),12,G,7/15/2006,,Partly Cloudy,59,7.5,11
+McAleer,182th by Big Retain. Wall,13,G,7/15/2006,,Partly Cloudy,58,7.5,11.5
+Brookside,28th (Grace Cole Park),15.2,Y,7/15/2006,,Partly Cloudy,58,7.5,10
+Brookside,28th Ave Restoration Site,,B,7/15/2006,,Partly Cloudy,NS,NS,NS
+Hillside,35th Ave @ End,15.3,Y,7/15/2006,,Partly Cloudy,56,8,11
+Sheridan,37th NE (S of School),,B,7/15/2006,,Partly Cloudy,59,7.7,10.5
+McAleer,Blue Herron Park,14,G,7/15/2006,,Partly Cloudy,59,7.5,12
+,,,,,,,,,
+,,,,,,,,,
 Lyon,35th - North of Ballanger,2,B,7/16/2005,,Clear,58,7.5,11
 Bruggers,Bruggers Bog,4.1,R,7/16/2005,,Clear,58,7.5,9
 Bruggers,Ballinger Way ,4.2,Y,7/16/2005,,Clear,60,7.5,11

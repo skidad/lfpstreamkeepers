@@ -1,9 +1,9 @@
 gittop <- "c:/Users/Derek/Documents/Revolution/lfpstreamkeepers.git"
 setwd( gittop )
-system("R CMD build -install LFPStreamKeepersData")
-
+system("R CMD build LFPStreamKeepersData")
 install.packages("XLConnect")
-install.packages("LFPStreamKeepersData_0.1-6.tar.gz", type="source" )
+detach("package:LFPStreamKeepersData",unload=TRUE)
+install.packages("LFPStreamKeepersData_0.2-0.tar.gz", type="source" )
 
 library( LFPStreamKeepersData )
 
@@ -47,15 +47,25 @@ options(width=180)
 source("R/plotBIBI.R")
 Site.barplot()
 ##################
-qd <- loadQualityData()
+library( LFPStreamKeepersData )
+options(width=100)
+qd <- lfpskLoadQualityData()
 head(qd)
 winter2013 <- subset(qd, Date == "1/19/2013" )
 write.table(winter2013)
 
 print(xtable(winter2013), type="html")
 
+
 x <- as.matrix(format(winter2013))
 rownames(x) <- rep("", nrow(x))
 print(x, quote=FALSE, right=TRUE)
 
-
+########
+# format quality data for web.
+library( LFPStreamKeepersData )
+options(width=100)
+qd <- lfpskLoadQualityData()
+qualData <- as.matrix(format(subset(qd, Date == "7/20/2013" )))
+rownames(qualData) <- rep("", nrow(qualData))
+print(qualData, quote=FALSE, right=TRUE)
