@@ -1,0 +1,4 @@
+#
+# Used to synchronize published website to local copy
+#
+rsync -avze ssh --delete lfpstrms@lfpstreamkeepers.org:public_html .
