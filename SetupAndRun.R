@@ -1,4 +1,4 @@
-gittop <- "c:/Users/Derek/Documents/Revolution/lfpstreamkeepers.git"
+gittop <- "c:/Users/Derek/Documents/lfpstreamkeepers.git"
 setwd( gittop )
 system("R CMD build LFPStreamKeepersData")
 install.packages("XLConnect")
@@ -63,6 +63,8 @@ print(x, quote=FALSE, right=TRUE)
 
 ########
 # format quality data for web.
+# Used to produce tables found at:
+# http://www.lfpstreamkeepers.org/data/quality-data-2013
 library( LFPStreamKeepersData )
 options(width=100)
 qd <- lfpskLoadQualityData()
