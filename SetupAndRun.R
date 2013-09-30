@@ -10,10 +10,13 @@ library( LFPStreamKeepersData )
 plotBIBI( system.file("extdata", "BIBI", 'bibiSummaryData.csv', package="LFPStreamKeepersData"),createJpg=FALSE )
 
 source(system.file("loadBIBI.R", package="LFPStreamKeepersData"))
+source("LFPStreamKeepersData/R/plotBIBI.R")
+dir()
 Site.barplot(CollectionSite = "mcAleerAcres")
 Site.barplot(CollectionSite = "mcAleerPerkins")
 Site.barplot(CollectionSite = "lyon178th")
 Site.barplot(CollectionSite = "lyon35th")
+ Change title to "Composite BIBI Score for ** by Year" and add key. . .
 
 
 ######
@@ -71,3 +74,4 @@ qd <- lfpskLoadQualityData()
 qualData <- as.matrix(format(subset(qd, Date == "7/20/2013" )))
 rownames(qualData) <- rep("", nrow(qualData))
 print(qualData, quote=FALSE, right=TRUE)
+

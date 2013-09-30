@@ -68,6 +68,6 @@ Site.barplot <- function(CollectionSite = "mcAleerAcres")
     legendArray <- cbind(yVal,legend)
 
     z<-apply(legendArray, 1, function(y) { text( 0, y=as.numeric(y[1]), y[2] , pos=4, offset=1.0, cex=0.7, font=2) })
-    title(paste("Barplot of Score for",CollectionSite, "by Year and Site"), col="blue")
+    title(paste("Composite BIBI Score for", CollectionSite, "by Year"), col="blue")
 }
 

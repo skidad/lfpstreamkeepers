@@ -1,3 +1,4 @@
 export( plotBIBI )
+export( Site.barplot )
 export( readScoringXls )
 export( lfpskLoadQualityData )
