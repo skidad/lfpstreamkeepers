@@ -4,6 +4,9 @@ NEWS/Change Log for LFPStreamKeepersData package
 0.2-1 2013-09-29
         o Added Site.barplot to NAMESPACE, making it an
 	  externally visible function.
+	o Updated title in plots produced by Site.barplot.
+	o Gave Site.barplots a legend explaining total score.
+	o SetUpAndRun.R has sectipn to produce plots for website.
 
 0.2-0 2013-07-20
         o New Data for July Testing.

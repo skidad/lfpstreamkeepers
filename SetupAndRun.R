@@ -5,19 +5,35 @@ install.packages("XLConnect")
 detach("package:LFPStreamKeepersData",unload=TRUE)
 install.packages("LFPStreamKeepersData_0.2-0.tar.gz", type="source" )
 
+
+###############################
+# Produce png's for website.
 library( LFPStreamKeepersData )
 
 plotBIBI( system.file("extdata", "BIBI", 'bibiSummaryData.csv', package="LFPStreamKeepersData"),createJpg=FALSE )
 
 source(system.file("loadBIBI.R", package="LFPStreamKeepersData"))
 source("LFPStreamKeepersData/R/plotBIBI.R")
-dir()
+
+# plot em to graphics device
 Site.barplot(CollectionSite = "mcAleerAcres")
 Site.barplot(CollectionSite = "mcAleerPerkins")
 Site.barplot(CollectionSite = "lyon178th")
 Site.barplot(CollectionSite = "lyon35th")
- Change title to "Composite BIBI Score for ** by Year" and add key. . .
 
+# grab the graphics device and put it in a png.
+plotOne <- function (CollectionSite) {
+    cat( CollectionSite,"\n" )
+    Site.barplot(CollectionSite = CollectionSite)
+    par(bg="white")
+    dev.copy(png,filename=paste( CollectionSite,".bibiScore.png", sep=""),
+             height=600, width=800)
+    dev.off()
+}
+z <- lapply( c("mcAleerAcres", "mcAleerPerkins", "lyon178th", "lyon35th"), FUN=plotOne )
+
+Update webpage with these plots Noting they are
+essentially a graphical representation of the composite table.
 
 ######
 # data accessor: load the raw data.

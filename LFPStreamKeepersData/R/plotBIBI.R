@@ -60,14 +60,29 @@ Site.barplot <- function(CollectionSite = "mcAleerAcres")
     Val6 <- eval(parse(text=paste("as.numeric(bibiScoringData$y2012$",CollectionSite,"[bibiScoringData$y2012$",CollectionSite,"$Replicate=='Composite',3])")))
 
     height <- cbind(Year2006 = Val1, Year2007 = Val2, Year2008 = Val3, Year2009 = Val4, Year2010 = Val5, Year2012 = Val6)
+
+
+                                        # Add extra space to right of plot area; change clipping to figure
+    par(mar=c(5.1, 4.1, 4.1, 8.7), xpd=TRUE)
+
     barplot(height, col = c("darkgreen","blue","red","yellow","orange","pink","brown","tan","lightblue","white"),beside = FALSE)
 
-    # position legend just above bottom of each section of barplot
+    # position labels just above bottom of each section of barplot
     yVal <- cumsum(height[,"Year2006"]) - height[,"Year2006"] + 0.6
-    legend <- c("Total Num","Ephem","Plecop","Trichop","Long-lived","Intolerant","Tolerant%","Preditors%","Clinger","Dominance 3 Taxa %")
-    legendArray <- cbind(yVal,legend)
+    barLabels <- c("Total Num","Ephem","Plecop","Trichop","Long-lived","Intolerant","Tolerant%","Preditors%","Clinger","Dominance 3 Taxa %")
+    barLabelsArray <- cbind(yVal,barLabels)
 
-    z<-apply(legendArray, 1, function(y) { text( 0, y=as.numeric(y[1]), y[2] , pos=4, offset=1.0, cex=0.7, font=2) })
+    z<-apply(barLabelsArray, 1, function(y) { text( 0, y=as.numeric(y[1]), y[2] , pos=4, offset=1.0, cex=0.7, font=2) })
+
     title(paste("Composite BIBI Score for", CollectionSite, "by Year"), col="blue")
+
+    legend( "topright",
+           inset=c(-0.4,0),
+           cex=0.7,
+           legend = c("10 to 16 Very Poor", "18 to 26 Poor",
+                   "28 to 36 Fair", "38 to 44 Good",
+                   "46 to 50 Excellent" ),
+           title="Total Score")
+
 }
 
