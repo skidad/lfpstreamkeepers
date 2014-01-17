@@ -1,8 +1,9 @@
 Package: LFPStreamKeepersData
-Version: 0.2-0
+Version: 0.3-0
 Title: Lake Forest Park StreamKeepers Data
 Author: Derek Brown <skidad@acm.org>
 Maintainer: Derek Brown <skidad@acm.org>
+URL: http://www.lfpstreamkeepers.org
 Description: Lake Forest Park, WA, Streams Quality and Benthic Data
 License: ??
 Depends: R (>= 2.13.1)
