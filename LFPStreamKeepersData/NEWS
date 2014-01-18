@@ -1,6 +1,9 @@
 NEWS/Change Log for LFPStreamKeepersData package
 ------------------------------------------------
 
+0.3-1 2014-01-18
+      o Added winter 2014 Quality Data
+
 0.3-0 2014-01-16
       o Added 2013 BIBI Summary data
       o DESCRIPTION file gets URL

@@ -3,7 +3,7 @@ setwd( gittop )
 system("R CMD build LFPStreamKeepersData")
 install.packages("XLConnect")
 detach("package:LFPStreamKeepersData",unload=TRUE)
-install.packages("LFPStreamKeepersData_0.2-0.tar.gz", type="source" )
+install.packages("LFPStreamKeepersData_0.3-0.tar.gz", type="source" )
 
 
 ###############################
@@ -87,7 +87,7 @@ print(x, quote=FALSE, right=TRUE)
 library( LFPStreamKeepersData )
 options(width=100)
 qd <- lfpskLoadQualityData()
-qualData <- as.matrix(format(subset(qd, Date == "7/20/2013" )))
+qualData <- as.matrix(format(subset(qd, Date == "1/18/2014" )))
 rownames(qualData) <- rep("", nrow(qualData))
 print(qualData, quote=FALSE, right=TRUE)
 
