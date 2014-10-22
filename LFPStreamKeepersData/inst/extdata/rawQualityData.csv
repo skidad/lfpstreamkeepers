@@ -1,4 +1,16 @@
 Stream,Reach,Num,Box,Date,Sky,Turbidity,T F,pH,Mg/l
+Lyon     , 35th - North of Ballanger,    2, B, 7/19/2014, overcast, Clear , 61, 8.0,   11
+Bruggers , Bruggers Bog             ,  4.1, R, 7/19/2014, overcast, Clear , 62, 7.5,   12
+Bruggers , Ballinger Way            ,  4.2, Y, 7/19/2014, overcast, Clear , 63, 7.5, 10.5
+Lyon     , 35th (South of 185th)    ,     , R, 7/19/2014, overcast, Clear , 63, 7.5, 11.5
+Lyon     , Town Center              ,    3, R, 7/19/2014, overcast, Clear , 62, 7.5, 11.5
+McAleer  , 196th (Under Road)       ,   12, G, 7/19/2014, overcast, Clear , 60, 8.0, 10.5
+McAleer  , 182th by Big Retain. Wall,   13, G, 7/19/2014, overcast, Cloudy, 60, 8.0, 10.5
+Brookside, 28th (Grace Cole Park)   , 15.2, Y, 7/19/2014, overcast, Clear , 59, 8.0,    9
+Hillside , 35th Ave @ End           , 15.3, Y, 7/19/2014, overcast, Cloudy, 60, 8.0,  8.5
+Sheridan , 37th NE (S of School)    ,     , B, 7/19/2014, overcast, Clear , 61, 7.5, 10.5
+McAleer  , Blue Heron Park          ,   14, G, 7/19/2014, overcast, Clear , 60,   8,   11
+,,,,,,,,,
 Lyon,35th - North of Ballanger,2,B,1/18/2014,overcast,Clear,44,7.5,13
 Bruggers,Bruggers Bog,4.1,R,1/18/2014,overcast,Clear,45,7.5,12
 Bruggers,Ballinger Way,4.2,Y,1/18/2014,overcast,Clear,43,7.5,11
