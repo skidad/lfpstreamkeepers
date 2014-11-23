@@ -1,0 +1,23 @@
+@charset "utf-8";
+#upnav {
+	position: fixed;
+	left: 0%;
+	/*padding-left: 10px;*/
+	padding-left: .5%;
+	bottom: 25px;
+	/*width: 40px;*/
+	width: 2%;
+	height: 40px;
+	z-index: 4;
+	NOTclip: rect(auto,auto,35px,auto);
+	color: #323d47;
+	font-family: "Roboto", Verdana, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	/*margin-right: 30px;*/
+	margin-right: .5%;
+}
+#upnav a {
+text-decoration: overline;
+}

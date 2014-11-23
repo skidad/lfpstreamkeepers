@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* Best to keep css specific to each document separate from css for the template */
+
+/*  Formats instruction box for Compound Summary. Not part of the final QuikScan Views text   */
+.instructionsModule {
+	background-color: #FFC;
+	border: 1px solid #bbb;
+	border-radius: 1em;
+	color: #000;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0px;
+	
+}

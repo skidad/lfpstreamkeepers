@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -------------- STRUCTURE */
+
+body {
+	color: #000;
+	max-width: 1100px;
+	margin-left: 30px;
+	background-color:#FFC;
+}
+
+
+/* -----------------DISPLAY */
+
+.img-wrap {
+	width:80%;
+	/*80% centers images*/
+}
+
+img.responsive {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
+/* -------------- LINKS */
+
+ a:active {
+ color: #268bd2;
+}
+
+
+	
+/* -------------- TEXT */
+
+p, dd, ul {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: left;
+}
+	
+
+h1, h2, h3 {
+	color: #323d47;
+	font-family: "Roboto", Verdana, Arial, sans-serif;
+	font-weight: 700;
+	line-height: 32px;
+	text-align: left;
+}
+
+h1 {
+	font-size: 26px;
+}
+
+h2 {
+	font-size: 22px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+
+/* -------------- SPACING */
+
+/*---------------ACCESSIBILITY */
+
+/*  This is a class that's added by the toggleQSClasses function in the file "toggleQSClasses.js It toggles high contrast on or off for the Preferences feature.*/
+.contrast {
+	background-color: yellow;
+	border: 1.5px solid black;
+}
+
+/*  This is a class that's added by the toggleQSClasses function in the file "toggleQSClasses.js It toggles the larger font size on or off for the Preferences feature.*/
+.fontGrow {
+	font-size: 20px;
+}
+

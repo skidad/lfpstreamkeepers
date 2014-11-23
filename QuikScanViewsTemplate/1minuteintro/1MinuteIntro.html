@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<title>1 Minute Intro</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, target-densitydpi=device-dpi" />
+<link rel="stylesheet" type="text/css" href="1minuteIntro.css"/>
+<!--<link href='http://fonts.googleapis.com/css?family=Roboto:700italic,700|Open+Sans:400,400italic' rel='stylesheet' type='text/css'/>-->
+<!--<link rel="stylesheet" href="upnav.css"/>-->
+<link href="mediaqueries.css" rel="stylesheet" type="text/css" />
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="prefs.js"></script>
+
+<!-------------------->
+<!-------------------->
+<!-------------------->
+<!-------------------->
+<!--Script to add a new color or larger font to summaries. The ".contrast" class is in information.css-->
+<script src="toggleQSClasses.js"></script>
+</head>
+
+<body>
+<header>
+<h2><a href="../index.html">Back</a></h2>
+<h2><span class="barspacer"><a href="#" title="Choose higher contrast, larger font, and more" id="Preferences">Viewing options</a></span></h2>
+<div id="prefChoice">
+  <p>The High Contrast and Large Font options are intended primarily for people with impaired vision.</p>
+  
+  <ul style="list-style: none;">
+    <li title="Change the colors to maximize contrast">
+      <input type="checkbox" id="highContrast" autocomplete="off" onClick="toggleQSClasses(this, '*',  'contrast');">
+      <label for="highContrast">High contrast is Off</label>
+    </li>
+    <li title="Increases font size">
+      <input type="checkbox" id="largeFont" autocomplete="off" onClick="toggleQSClasses(this, '*',   'fontGrow');">
+      <label for="largeFont">Large font is Off</label>
+    </li>
+  </ul>
+  <!--Prefchoice has a contextual selector in template.css--> 
+  <!--end Pref Choice: --></div>
+<h1> Your 1-Minute Introduction to QuikScan</h1>
+</header>
+<section>
+<ol>
+  <li>
+    The <span class="blueText">TABLE OF CONTENTS</span> jumps you to any section of the text. Click section headings to jump back to the TOC.
+    </li>
+    <p><img src="images/TOC.jpg" alt="Table of Contents" class="responsive"/></p>
+
+  <li>
+   The gray boxes are carefully written summaries. The numbers point you to where each summarized idea is discussed in the text. You can also click.
+  </li>
+  <li>
+    In each section,  clear the checkbox to hide the full text and read the summary only. (If the checkbox is not displayed, just click the region where the checkbox is supposed to be visible.)
+    </li>
+    <p><img src="images/Module.png"  alt="QuikScan user interface" class="responsive"/></p>
+
+  <li>
+   Click <strong>SO</strong> (Summaries Only) to read all the summaries but not the full text.
+  </li>
+  <li>
+    Click <strong>FT</strong> to read the summaries and the full text. Doing so greatly increases retention.
+  </li>
+  <li>
+    This link, or the HOME key, takes you to the top:&nbsp; &nbsp;<img src="images/Upnav.jpg"  alt="QuikScan user interface" class="responsive"/>
+  </li>
+</ol>
+<p>To learn all the benefits of QuikScan and how use can use it, visit <a href="http://www.quikscan.org" title="QuikScan Project website">QuikScan.org</a>.</p>
+</section>
+</body>
+</html>

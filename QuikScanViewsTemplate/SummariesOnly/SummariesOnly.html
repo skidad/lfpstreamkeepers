@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SummariesOnly</title>
+<link rel="stylesheet" type="text/css" href="summariesOnly.css"/>
+<link rel="stylesheet" href="upnav.css"/>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="prefs.js"></script>
+
+<!--Script to add a new color or larger font to summaries. The ".contrast" class in WOTP.css-->
+<script src="toggleQSClasses.js"></script>
+</head>
+
+<body>
+<header>
+  <h2><a href="../index.html">Back</a></h2>
+  <h2><a href="#" id="Preferences"> Viewing options</a></h2>
+  <div id="prefChoice">
+  <p>The High Contrast and Large Font options are intended primarily for people with impaired vision.</p>
+   
+    <ul style="list-style: none;">
+      <li title="Change the colors to maximize contrast">
+        <input type="checkbox" id="highContrast" autocomplete="off" onClick="toggleQSClasses(this, '*',  'contrast');">
+        <label for="highContrast">High contrast is Off</label>
+      </li>
+      <li title="Increases font size">
+        <input type="checkbox" id="largeFont" autocomplete="off" onClick="toggleQSClasses(this, '*',   'fontGrow');">
+        <label for="largeFont">Large font is Off</label>
+      </li>
+    </ul>
+    <!--Prefchoice has a contextual selector in template.css--> 
+    <!--end Pref Choice: --></div>
+  <h1>Summaries Only Page</h1>
+</header>
+<section class="module">
+  <h1 style="font-size: 36px;">Your Title Your Title Your Title</h1>
+  <h1 style="font-size: 30px;">Summaries Only </h1>
+  <h1>Short summary of your title:</h1>
+  <blockquote>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  </p>
+  </blockquote>
+  <h1>Longer summaries by section:</h1>
+  <div id="upnav"><a href="#">&#9650;</a> </div>
+  <!-- SumHead1 and the other SumHead ids are targets from the corresponding Section links in the main document. So the "Section X" link jumps to "Section X" in the summary -->
+  <!-- -->
+  <!--This is a summaries only entry for an optional section that doesn't have a number. Uncomment it if you want to use it--> 
+  
+  <!--
+  <h1><a id="SumHead0" href="../index.html#Sec0"> &laquo;Recap of Chapter 11  </a></h1>
+  <p><span class="focus">To analyze data and develop recommendations, (1) compile and summarize data, (2) analyze data, (3) develop findings and recommendations, and (4) produce the final usability test report.</span>  </p>
+  -->
+  <h1><a id="SumHead1" href="../index.html#Sec_1"> &laquo;Alligators  (Section 1)</a></h1>
+  <p><a href="#Sec1-1P">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</a></p>
+  <h1> <a id="SumHead2" href="../index.html#Sec_2"> &laquo;Anteaters (Section 2)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1> <a id="SumHead3" href="../index.html#Sec_3"> &laquo;Axolotls(Section 3)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1><a id="SumHead4" href="../index.html#Sec_4"> &laquo;Bats?&nbsp;(Section 4)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1><a id="SumHead5" href="../index.html#Sec_5"> &laquo;Bears (Section 5)</a> </h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h1><a id="SumHead6" href="../index.html#Sec_6"> &laquo;Bison (Section 6)</a><a href="#TOC_entry-I"></a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1><a id="SumHead7" href="../index.html#Sec_7">&laquo;Cats&nbsp;(Section 7)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1><a id="SumHead8" href="../index.html#Sec_8">&laquo;Coyotes&nbsp;(Section 8)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.  </p>
+  <h1><a id="SumHead9" href="../index.html#Sec_9">&laquo;Crocodiles&nbsp;(Section 9)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1><a id="SumHead10" href="../index.html#Sec_10">&laquo;Deer&nbsp;(Section 10)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1><a id="SumHead11" href="../index.html#Sec_11">&laquo;Dogs&nbsp;(Section 11)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1><a id="SumHead12" href="../index.html#Sec_12">&laquo;Ducks&nbsp;(Section 12)</a></h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1> <a id="SumHead13" href="../index.html#Sec_13"> &laquo;Eagles (Section 13)</a></h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h1> <a id="SumHead14" href="../index.html#Sec_14"> &laquo;Eels (Section 14)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+<h1> <a id="SumHead15" href="../index.html#Sec_15"> &laquo;Emus (Section 15)</a></h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1> <a id="SumHead16" href="../index.html#Sec_16"> &laquo;Falcons (Section 16)</a></h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1> <a id="SumHead17" href="../index.html#Sec_17"> &laquo;Ferrets (Section 17)</a></h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1> <a id="SumHead18" href="../index.html#Sec_18"> &laquo;Frogs (Section 18)</a></h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1> <a id="SumHead19" href="../index.html#Sec_19"> &laquo;Geckos (Section 19)</a></h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1> <a id="SumHead20" href="../index.html#Sec_20"> &laquo;Goats (Section 20)</a></h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p
+         >
+  <h1> <a id="SumHead21" href="../index.html#Sec_21"> &laquo;Grasshopper (Section 21)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h1> <a id="SumHead22" href="../index.html#Sec_22"> &laquo;Hamsters(Section 22)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1> <a id="SumHead23" href="../index.html#Sec_23"> &laquo;Horses (Section 23)</a></h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1> <a id="SumHead24" href="../index.html#Sec_24"> &laquo;Hyenas (Section 24)</a></h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1> <a id="SumHead25" href="../index.html#Sec_25"> &laquo;Ibises (Section 25)</a></h1>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<h1> <a id="SumHead26" href="../index.html#Sec_26"> &laquo;Iguanas (Section 26)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h1> <a id="SumHead26" href="../index.html#Sec_26"> &laquo;Impalas (Section 27)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h1> <a id="SumHead26" href="../index.html#Sec_26"> &laquo;Jackals (Section 28)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h1> <a id="SumHead26" href="../index.html#Sec_26"> &laquo;Jaguars (Section 29)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h1> <a id="SumHead30" href="../index.html#Sec_30"> &laquo;Jellyfish (Section 30)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <h1> <a id="SumHead31" href="../index.html#Sec_31"> &laquo;Kangaroos, Kingishers, and Koalas (Section 31)</a></h1>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</section>
+<footer>
+  <h2><a href="../index.html">Back</a></h2>
+</footer>
+</body>
+</html>

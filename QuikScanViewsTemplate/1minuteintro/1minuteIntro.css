@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -------------- BODY */
+
+body {
+	color: #000;
+	max-width: 1100px;
+	background-color: #FFC;
+	margin-left: 2%;
+}
+.blueText {
+	color: #36C;
+}
+/* -------------- HEADER */
+
+header h1 {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	color: #c03;
+	font-weight: bold;
+}
+header h2 {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-weight: bold;
+}
+header p {
+	padding-left: 1 em;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+}
+header ul {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	text-align: left;
+	line-height: 100%;
+}
+header li {
+	padding-bottom: 1em;
+}
+header a:link, header a:visited, header a:active {
+	color: #323d47;
+	padding-bottom: 1px;
+	text-decoration: none;
+}
+header a:hover {
+	color: #268bd2;
+	padding-bottom: 1px;
+	text-decoration: none;
+}
+/* -------------- SECTION */
+
+
+
+h1, h2, h3 {
+	color: #323d47;
+	font-family: "Roboto", Verdana, Arial, sans-serif;
+	font-weight: 700;
+	text-align: left;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.6em;
+}
+h3 {
+	font-size: 1.2em;
+}
+p {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+section a:link, section a:visited, section a:active {
+	color: #323d47;
+	padding-bottom: 1px;
+	text-decoration: none;
+}
+section a:hover {
+	border-bottom: 2px dotted #ccc;
+	color: #268bd2;
+	padding-bottom: 1px;
+	text-decoration: none;
+}
+
+section li {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+}
+
+
+
+
+/*------------- FIGURES */
+
+
+
+figure {
+	width: 90%;
+	margin-left: 0;
+}
+.responsive {
+	max-width: 100%;
+	height: auto;
+}
+/*------------- VIEWING OPTIONS */
+
+
+
+#prefChoice input {
+  	margin-right: 0.5em;
+}
+#prefChoice input, 
+#prefChoice label {
+  	cursor: pointer;
+}
+#prefChoice input.enabled+label {
+  	color: #268bd2;
+  	font-weight: bold;
+  	font-size: 110%;
+}
+#prefChoice input[type="checkbox"] {
+	width: 0px;
+	opacity: 0;
+	display: none;
+}
+#prefChoice input[type="checkbox"] + label:before {
+	background-image: url("images/checkbox.png");
+	display: inline-block;
+	height: 19px;
+	width: 19px;
+	margin-left: 0.25em;
+	vertical-align: middle;
+	color: transparent;
+	margin: 0.3em;
+}
+#prefChoice input[type="checkbox"] + label:before {
+	background-position: 0px  -19px;
+	content:"not checked";
+}
+#prefChoice input[type="checkbox"]:checked + label:before {
+	background-position: 0px  0px;
+	background-image: url("images/checkbox.png");
+	content:"checked";
+}
+
+/*  This class indents the links "High contrast is Off" and "Large font On Off" within the Preferences feature */
+#prefChoice p a {
+	padding-left: 6.5%;
+}
+
+#prefChoice {
+	background-color: #FFFF00;
+}
+
+
+/*  This is a class that's added by the toggleQSClasses function in the file "toggleQSClasses.js It toggles high contrast on or off for the Preferences feature.*/
+.contrast {
+	background-color: #FFFF00;
+	border-color: 000;
+}
+
+/*  This is a class that's added by the toggleQSClasses function in the file "toggleQSClasses.js It toggles the larger font size on or off for the Preferences feature.*/
+.fontGrow {
+	font-size: 110%;
+	line-height: 110%;
+}
+
+

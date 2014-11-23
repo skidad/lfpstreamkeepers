@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Notes</title>
+<link rel="stylesheet" type="text/css" href="notes.css"/>
+<link rel="stylesheet" href="upnav.css"/>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="prefs.js"></script>
+
+<!--Script to add a new color or larger font to Notes. The ".contrast" class in template.css-->
+<script src="toggleQSClasses.js"></script>
+</head>
+
+<body>
+<header>
+  <h2><a href="../index.html">Back</a></h2>
+  <h2><a href="#" id="Preferences"> Viewing options</a></h2>
+  <div id="prefChoice">
+  <p>The High Contrast and Large Font options are intended primarily for people with impaired vision.</p>
+   
+    <ul style="list-style: none;">
+      <li title="Change the colors to maximize contrast">
+        <input type="checkbox" id="highContrast" autocomplete="off" onClick="toggleQSClasses(this, '*',  'contrast');">
+        <label for="highContrast">High contrast is Off</label>
+      </li>
+      <li title="Increases font size">
+        <input type="checkbox" id="largeFont" autocomplete="off" onClick="toggleQSClasses(this, '*',   'fontGrow');">
+        <label for="largeFont">Large font is Off</label>
+      </li>
+    </ul>
+    <!--Prefchoice has a contextual selector in template.css--> 
+    <!--end Pref Choice: --></div>
+  <h1>Notes</h1>
+</header>
+<section class="module">
+  <h1>Your Title Your Title Your Title</h1>
+
+  <h2>General notes for this document </h2>
+  <h2>Notes for each section</h2>
+  <div id="upnav"><a href="#">&#9650;</a> </div>
+  <!-- NotesHead1 and the other NotesHead ids are targets from the corresponding Section links in the main document. So the "Section X" link jumps to "Section X" in the summary --> 
+  
+  <!-- This is a notes entry for the optional extra TOC entry that doesn't have a number. Uncomment it if you want to use it--> 
+  <!--<h3><a id="NotesHead0" href="../index.html#Sec0"> &laquo;Recap of Previous Chapter  </a>  </h1>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>-->
+  <h3><a id="NotesHead1" href="../index.html#Sec_1"> &laquo;Alligators  (Section 1)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead2" href="../index.html#Sec_2"> &laquo;Anteaters (Section 2)</a></h3>
+  <p>No notes for this section.</p>
+
+  <h3><a id="NotesHead3" href="../index.html#Sec_3"> &laquo;Axolotls (Section 3)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead4" href="../index.html#Sec_4"> &laquo;Bats&nbsp;(Section 4)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead5" href="../index.html#Sec_5"> &laquo;Bears (Section 5)</a> </h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead6" href="../index.html#Sec_6"> &laquo;Bison  (Section 6)</a><a href="#TOC_entry-I"></a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead7" href="../index.html#Sec_7">&laquo;Cats&nbsp;(Section 7)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead8" href="../index.html#Sec_8">&laquo;Coyotes &nbsp;(Section 8)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead9" href="../index.html#Sec_9">&laquo;Crocodiles&nbsp;(Section 9)</a></h3>
+  <p>Notes</p>
+  <p>ILorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead10" href="../index.html#Sec_10">&laquo;Deer&nbsp;(Section 10)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead11" href="../index.html#Sec_11">&laquo;Dogs&nbsp;(Section 11)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead12" href="../index.html#Sec_12">&laquo;Ducks&nbsp;(Section 12)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead13" href="../index.html#Sec_13"> &laquo;Eagles (Section 13)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead14" href="../index.html#Sec_14"> &laquo;Eels (Section 14)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat..</p>
+  <h3><a id="NotesHead15" href="../index.html#Sec_15"> &laquo;Emus (Section 15)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat..</p>
+  <h3><a id="NotesHead16" href="../index.html#Sec_16"> &laquo;Falcons (Section 16)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p
+      >
+  <h3><a id="NotesHead17" href="../index.html#Sec_17"> &laquo;Ferrets (Section 17)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead18" href="../index.html#Sec_18"> &laquo;Frogs (Section 18)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead19" href="../index.html#Sec_19"> &laquo;Geckos (Section 19)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead20" href="../index.html#Sec_20"> &laquo;Goats (Section 20)</a></h3>
+  <p>Notes</p>
+  <p><a href="#Sec20-1P">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead21" href="../index.html#Sec_21"> &laquo;Grasshoppers (Section 21)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead22" href="../index.html#Sec_22"> &laquo;Hamsters (Section 22)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.ure.</p>
+  <h3><a id="NotesHead23" href="../index.html#Sec_23"> &laquo;Horses (Section 23)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead24" href="../index.html#Sec_24"> &laquo;Hyenas (Section 24)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+  <h3><a id="NotesHead25" href="../index.html#Sec_25"> &laquo;Ibises (Section 25)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead26" href="../index.html#Sec_26"> &laquo;Iguanas (Section 26)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead27" href="../index.html#Sec_27"> &laquo;Impalas (Section 27)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead28" href="../index.html#Sec_28"> &laquo;Jackals (Section 28)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead29" href="../index.html#Sec_29"> &laquo;Jaguars (Section 29)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead30" href="../index.html#Sec_30"> &laquo;Jellyfish (Section 30)</a></h3>
+  <p>Notes</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+  <h3><a id="NotesHead31" href="../index.html#Sec_31"> &laquo;Kangaroos, Kingfishers, and Koalas (Section 31)</a></h3>
+  <p>Notes
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <h3><a id="NotesHead32" href="../index.html#Sec_32"> &laquo;References </a></h3>
+  <p>Notes for reference list IF ANY</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</section>
+<footer>
+<h3><a href="../index.html">Back</a>
+</h3>
+</body>
+</html>

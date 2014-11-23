@@ -1,0 +1,420 @@
+/* -------------- STRUCTURE */
+
+html {
+	max-height: 100000000px;
+}
+body {
+	background-color: #dddddb;
+	color: #000;
+	background-image: url('images/bgtile.jpg');
+	/*max-width: 1100px;*/
+	width: 80%;
+	margin: 0 auto;
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 1em;
+}
+header {
+	padding: 5px 5px 5px 5px;
+	color: #603;
+}
+
+
+
+.module {
+	background-color: #fbfbfa;
+	border: 1px solid #bbb;
+	/*max width was disabled because doing so improved behavior with mobile devices*/
+	/*max-width: 1000px;*/
+	color: #000;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0;
+}
+
+.summary {
+	background-color: #ecede9;
+	border: 1px solid #bbb;
+	color: #000;
+	list-style-type: none;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/*  The "summaryTight" class, when applied, decreases padding for short summaries */
+.summaryTight {
+	background-color: #ecede9;
+	border: 1px solid #bbb;
+	color: #000;
+	list-style-type: none;
+	padding: 0.6em;
+	margin-left: -1em;
+	margin-right: -1em;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+/*  Formats the text in the upper right of each section that indicates the section number. This text hyperlinks to the "Summaries Only" page. 
+Also, hideshow.css uses this to display checkboxes*/
+/* For sections with no notes, delete the "Notes and chevron (&raquo;) from HTML. Leave the nonbreaking space. */
+/* You can remove all notes globally by setting opacity to 0. */
+.sectionNoteFormat {
+	text-align: right;
+	font-size: 0.8 em;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+
+
+
+/* -------------- FIGURES */
+
+
+
+
+/*Removes border from QuikScan logo*/
+a img {
+	border: none;
+}
+figure {
+	width: 90%;
+	margin-left: 0;/*min-width: 200px;*/
+}
+img.responsive {
+	max-width: 100%;
+	height: auto;
+	border: thin solid #000;
+}
+figcaption {
+	color: #039;
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	text-align: left;
+	font-size: 1em;
+}
+/* You can customize each figure with an individual id
+#figure-1 {
+	
+}
+
+
+
+
+/* Prevents a graphic from floating outside of its module.*/
+.clearBoth {
+	clear: both;
+}
+/* -------------- LINKS including hover effect */
+
+
+header a:link, header a:visited {
+	/*color: inherit;*/
+	color: #000;
+	text-decoration: none;
+}
+header a:hover, header a:active {
+	color: #268bd2;
+}
+section a:link, section a:visited, section a:active {
+	color: #323d47;
+	padding-bottom: 0;
+	margin: 0;
+	text-decoration: none;
+}
+section a:hover {
+	/* border-bottom: 2px dotted #ccc; */
+	/* color: #268bd2; */
+	/* color: #0066FF; */
+	padding-bottom: 1px;
+	text-decoration: none;
+}
+
+section.useHoverHelper a.hoverHelper {
+	/* border-bottom: 2px dotted #ccc; */
+	/* color: #268bd2; */
+	background-color: #88CCFF;
+	color: #fff;
+	padding-bottom: 1px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+/* Formats Summaries Only, Summaries & Full Text and All summaries links above TOC  */
+#LinksToSummariesOnlyHideShow a {
+	color: #36C;
+	font-size: 1em;
+	padding-bottom: 3px;
+	padding-top: 0;
+}
+#SummariesHideShowSpaceAdder {
+	background-color: transparent;
+	border-color: transparent;
+	margin: 0;
+	padding: 0;
+}
+#SummariesHideShowSpaceAdder ul {
+	display: none;
+}
+#welcomeMessage {
+	color: #C03;
+	padding-top: 0.8em;
+	padding-bottom: 0;
+}
+.VerticalArrow {
+	font-size: 1em;
+	opacity: 0.6;
+}
+/*  Formats the section number ("Sec") in the heading area of each module  */
+.ModHeadSec {
+	font-size: 0.5em;
+	margin-right: 1em;
+}
+
+/* -------------- TEXT */
+
+/* Used to space out the links at the top and also in the TOC  */
+.barspacer {
+	margin-right: 2%;
+}
+.blueText {
+	color: #36C;
+}
+header h1, header h2, header h3 {
+	font-family: "Roboto", Verdana, Arial, sans-serif;
+	padding-bottom: 6px;
+	margin: 0 auto;
+}
+section h1, section h2, section h3 {
+	color: #323d47;
+	font-family: "Roboto", Verdana, Arial, sans-serif;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 700;
+	text-align: left;
+}
+section h1 {
+	font-size: 1.4em;
+}
+section h2 {
+	font-size: 1.1em;
+}
+section h3 {
+	font-size: 1em;
+	color: #000;
+
+}
+p, dd, ul {
+	font-weight: normal;
+	text-align: left;
+	list-style-type: square;
+}
+
+dd, ul {
+	line-height: 1.2em;
+}
+dt {
+	font-weight: bold;
+	line-height: 2em;
+	text-align: left;
+}
+
+
+
+
+
+/* -------------- TABLE OF CONTENTS */
+
+
+#TOC {
+	border: medium solid #36C;
+}
+#TOC h1 a {
+ font-family: font-family: "Roboto", Verdana, Arial, sans-serif;
+ 	font-size: 1.3 em; 
+	padding-bottom: 3px;
+	border-bottom: 0;
+	margin: 0;
+}
+#TOC h2 a {
+ font-family: font-family: "Roboto", Verdana, Arial, sans-serif;
+ 	font-size: 1.2 em; 
+	padding-left: 55px;
+	padding-bottom: 0;
+	margin: 0;
+	
+}
+#TOC h3 a {
+ font-family: font-family: "Roboto", Verdana, Arial, sans-serif;
+ 	font-size: 1 em; 
+	padding-left: 90px;
+	padding-bottom: 0;
+	padding-top: 0;
+	font-style: italic;
+	font-weight: 400;
+	margin: 0;
+	
+}
+#TOC p {
+	padding-top: 0;
+	margin-top: 0;
+	padding-bottom: 0;
+	padding-top: 0;
+	margin-bottom: 0;
+}
+
+/*Adds some spacing before "TABLE OF CONTENT" heading at the top of the TOC    */
+#TOC h1:first-of-type {
+	padding-top: 0.4em;
+}
+
+/*   You can add extra space below last TOC entry by specifying h3 (like here) or h2, or h1, depending on what level of heading is the last TOC entry. Otherwise, comment this out */
+#TOC h1:last-of-type {
+	padding-bottom: 0.4em;
+}
+
+
+
+
+
+
+
+
+/* -------------- REFERENCE LIST */
+
+
+/* Needed to space reference items */
+
+.refList {
+}
+
+
+
+.refItemFormat {
+	color:#000;
+	padding-bottom: 1.2em;
+	
+}
+
+/* Prevents checkbox in Reference section.
+Can be used elsewhwere */
+.sectionNoteFormatNoCheckbox {
+	text-align: right;
+	font-size: .8 em;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+
+
+
+
+
+
+/* -------------- SPACING */
+
+
+#document-content h2 {
+	margin: 0;
+}
+.module dd {
+	/*margin: 0px 0px 6px 20px;*/
+	margin: 0 0 1em 0.7em;
+}
+.summary li {
+	padding-bottom: 0.4em;
+	
+	
+}
+ul.summary li:first-child {
+	padding-top: 0.8em;
+
+}
+/* -------------------- Viewing Options CSS */
+
+
+
+/*  This is a class that's added by the toggleQSClasses function in the file "toggleQSClasses.js It toggles high contrast on or off for the Preferences feature.*/
+.contrast {
+	background-color: #FFFF00;
+	border-color: 000;
+}
+/*
+/*  This is a class that's added by the toggleQSClasses function in the file "toggleQSClasses.js It toggles the larger font size on or off for the Preferences feature.*/
+.fontGrow {
+	zoom: 120%;
+	line-height: 120%;
+}
+
+
+
+/*  - - - Special optional display of first letters of list items - - */
+
+/* Used optionally to style the number (or letter)that begins all list items.*/
+section > ul.summary > li:first-letter {
+	font-size: 100%;
+	/* color: 0066FF; */
+	 color: #603; 
+}
+
+/*  Apply this class manually to override an instance of styling of the letter (or number) that begins all list items */
+/*  <Looks like this: <section class="module collapsible expanded no-first-letter">    */
+/*   Chrome  37.0.2062.120 m appears to occasionally block the special styling of the first letter for no apparent reason */
+section.no-first-letter > ul.summary > li:first-letter {
+	font-size: 100%;
+	color: inherit;
+	/* color: #603; */
+}
+
+
+/*
+ * Styles for the Viewing Options section
+ */
+#prefChoice input {
+  	margin-right: 0.5em;
+}
+#prefChoice input, 
+#prefChoice label {
+  	cursor: pointer;
+}
+#prefChoice input.enabled+label {
+  	color: #268bd2;
+  	font-weight: bold;
+  	font-size: 110%;
+}
+#prefChoice input[type="checkbox"] {
+	width: 0px;
+	opacity: 0;
+	display: none;
+}
+#prefChoice input[type="checkbox"] + label:before {
+	background-image: url("images/checkbox.png");
+	display: inline-block;
+	height: 19px;
+	width: 19px;
+	margin-left: 0.25em;
+	vertical-align: middle;
+	color: transparent;
+	margin: 0.3em;
+}
+#prefChoice input[type="checkbox"] + label:before {
+	background-position: 0px  -19px;
+	content:"not checked";
+}
+#prefChoice input[type="checkbox"]:checked + label:before {
+	background-position: 0px  0px;
+	background-image: url("images/checkbox.png");
+	content:"checked";
+}
+
+/*  This class indents the links "High contrast is Off", "Large font On Off", and "Hover Helper is On" within the Preferences feature */
+#prefChoice p a {
+	padding-left: 6.5%;
+}
+
+#prefChoice {
+	background-color: #FFFF00;
+}

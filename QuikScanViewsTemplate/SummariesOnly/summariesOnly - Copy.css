@@ -1,0 +1,174 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -------------- BODY */
+
+body {
+	color: #000;
+	background-image: url('bgtile.jpg');
+	max-width: 1100px;
+	margin-left: 30px;
+	/*background-color:#FFC;*/
+}
+
+/* -------------- STRUCTURE */
+
+header {
+	border-bottom: 2px solid #bbb;
+	padding: 5px 5px 5px 40px;
+}
+
+.module {
+	background-color: #fbfbfa;
+	border: 1px solid #bbb;
+	border-radius: 15px;
+	max-width: 1000px;
+	color: #000;
+	padding: 15px;
+	margin: 15px;
+}
+.summary {
+	background-color: #ecede9;
+	border: 1px solid #bbb;
+	color: #000;
+	list-style-type: none;
+	padding: 15px;
+	margin-left: -16px;
+	margin-right: -16px;
+}
+
+/*
+.module {
+	
+	background-color: #fffcc;
+	border: 1px solid #bbb;
+	color: red;
+	list-style-type: none;
+	padding: 15px;
+	margin-left: -16px;
+	margin-right: -16px;
+	
+}
+*/
+
+/* -------------- LINKS */
+
+
+/*Needed to add “a” to IDs in EZ Break view (VSTF) so that links work correctly. Otherwise the links find the earlier 1x, 2x, etc. But adding “a”, the EZ Break (VSTF) ids are distinct from the ones for the complete view.*/
+
+
+	
+header a:link, 
+header a:visited {
+	color: inherit;
+}
+
+header a:hover, 
+header a:active {
+ color: #268bd2;
+}
+
+section a:link, section a:visited, section a:active {
+	color: #323d47;
+	padding-bottom: 1px;
+	text-decoration: none;
+}
+section a:hover {
+	border-bottom: 2px dotted #ccc;
+	color: #268bd2;
+	padding-bottom: 1px;
+	text-decoration: none;
+}
+/* -------------- TEXT */
+
+h1, h2, h3 {
+	color: #323d47;
+	font-family: "Roboto", Verdana, Arial, sans-serif;
+	font-weight: 700;
+	line-height: 32px;
+	text-align: left;
+}
+
+h1 {
+	font-size: 3 em;
+}
+
+h2 {
+	font-size: 2 em;
+
+}
+
+h3 {
+	font-size: 1 em;
+
+}
+
+p, dd, ul {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 1 em;
+	font-weight: normal;
+	text-align: left;
+}
+	
+p {
+	line-height: 1.2 em;
+}
+
+dd, ul {
+	line-height: 23px;
+}
+
+
+
+dt {
+	font-family: "Roboto", Verdana, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 23px;
+	text-align: left;
+}
+
+blockquote {
+	border-left: 5px solid #ddd;
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 23px;
+	padding-left: 10px;
+	text-align: left;
+}
+
+/* -------------- SPACING */
+
+header h1, header h2, header h3 {
+	margin: 0 auto;
+}
+
+#document-content h2 {
+	margin: 0;
+}
+.module dd {
+	margin: 5px 0 20px 20px;
+}
+.summary li {
+	padding-bottom: 7px;
+}
+
+
+figure {
+	display:block;
+}
+
+/*---------------ACCESSIBILITY */
+
+/*  This is a class that's added by the toggleQSClasses function in the file "toggleQSClasses.js It toggles high contrast on or off for the Preferences feature.*/
+.contrast {
+	background-color: yellow;
+	border: 1.5px solid black;
+}
+
+/*  This is a class that's added by the toggleQSClasses function in the file "toggleQSClasses.js It toggles the larger font size on or off for the Preferences feature.*/
+.fontGrow {
+	font-size: 20px;
+}

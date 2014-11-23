@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+#show, #hide {
+	width: 24px;
+	font-size: 12px;
+}
+#TOC h1 a {
+	font-size: 0.8 em;
+	padding-bottom: 1px;
+	border-bottom: 0;
+	margin: 0;
+	line-height: 1;
+
+}
+#TOC h2 a {
+	padding-left: 0.7em;
+	font-size: 0.9 em;
+	line-height: 1;
+	
+}
+#TOC h3 a {
+	padding-left: 1.4em;
+	font-size: 0.6 em;
+	line-height: 1;
+	
+}

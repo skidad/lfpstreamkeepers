@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Credits</title>
+<link rel="stylesheet" type="text/css" href="credits.css"/>
+<link rel="stylesheet" href="upnav.css"/>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="prefs.js"></script>
+
+<!--Script to add a new color or larger font to Notes. The ".contrast" class in template.css-->
+<script src="toggleQSClasses.js"></script>
+</head>
+
+<body>
+<header>
+  <h2><a href="../index.html">Back</a></h2>
+  <h2><a href="#" id="Preferences"> Viewing options</a></h2>
+  <div id="prefChoice">
+  <p>The High Contrast and Large Font options are intended primarily for people with impaired vision.</p>
+    <ul style="list-style: none;">
+      <li title="Change the colors to maximize contrast">
+        <input type="checkbox" id="highContrast" autocomplete="off" onClick="toggleQSClasses(this, '*',  'contrast');">
+        <label for="highContrast">High contrast is Off</label>
+      </li>
+      <li title="Increases font size">
+        <input type="checkbox" id="largeFont" autocomplete="off" onClick="toggleQSClasses(this, '*',   'fontGrow');">
+        <label for="largeFont">Large font is Off</label>
+      </li>
+    </ul>
+    <!--Prefchoice has a contextual selector in template.css--> 
+    <!--end Pref Choice: --></div>
+  <h1>Credits</h1>
+</header>
+<section class="module">
+  <h1>Credits for this QuikScan Views edition</h1>
+  <p>QuikScanning of this text&#8212;Jane Doe</p>
+  <h1>Credits for QuikScan Views</h1>
+  <p>These people contributed to QuikScan Views</p>
+  <ul>
+    <li>JavaScript/CSS coding&#8212;Chris Elko</li>
+    <li>Design&#8212;David K. Farkas, Bob Kittle, Chris Elko, Ruben Rios, Jean Farkas</li>
+    <li>Design work on earlier versions of QuikScan&#8212;Quan Zhou</li>
+    <li>Usability testing&#8212;Malcolm Goodrich, Lisa Lowery, Ruben Rios, Scott Wang</li>
+    <li>Research validation of core QuikScan concept&#8212;Hans van der Meij</li>
+    <li>Perseverance&#8212;David K. Farkas</li>
+  </ul>
+</section>
+<footer>
+  <h2><a href="../index.html">Back</a></h2>
+</footer>
+</body>
+</html>

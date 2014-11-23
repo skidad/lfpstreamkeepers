@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title>QuikScan Views Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, target-densitydpi=device-dpi" />
+<link rel="stylesheet" type="text/css" href="template.css"/>
+<!--<link href='http://fonts.googleapis.com/css?family=Roboto:700italic,700|Open+Sans:400,400italic' rel='stylesheet'> -->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic">
+<link rel="stylesheet" href="upnav.css"/>
+<link rel="stylesheet" href="hideshow.css"/>
+<link href="mediaqueries.css" rel="stylesheet" type="text/css" />
+<link href="thisDocument.css" rel="stylesheet" type="text/css" />
+<style type="text/css"></style>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="prefs.js"></script>
+<script type="text/javascript" src="hoverEffect.js"></script>
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- Script to add a new color or larger font to summaries. The ".contrast" class in Template1.css-->
+<script src="toggleQSClasses.js"></script>
+<script src="toggleHoverHelper.js"></script>
+</head>
+<body>
+<header>
+  <div><!--Banner region: Logo, information icon, Notes and Credits link and Preferences link -->
+    <h2><a href="http://quikscan.org" title="Learn all about QuikScan at the Project website"><img src="images/QuikScanLogo.png" width="247" height="82" alt="QuikScan Logo" class="barspacer"/></a> <a href="1minuteintro/1MinuteIntro.html" title="How to use QuikScan Views" class="barspacer" target="_blank">1-Minute Intro</a> <span class="barspacer"><a href="Credits/Credits.html" title="Extra info about the this document" target="_blank">Credits</a></span><a href="#" title="Choose higher contrast, larger font, and more" id="Preferences">Viewing options</a></h2>
+    <!--The prefChoice div is displayed and hidden by prefs.js-->
+    <div id="prefChoice">
+      
+      <ul style="list-style: none;">
+        <li> The High Contrast and Large Font options are intended primarily for people with impaired vision.<br><br>
+          The Hover Helper option lets you choose whether mousing over a sentence in a summary causes the corresponding text in the body of the document to display in blue.<br><br></li>
+        <li title="Change the colors to maximize contrast">
+          <input type="checkbox" id="highContrast" autocomplete="off" onClick="toggleQSClasses(this, 'header, header *, .module,.module *', 'contrast');">
+          <label for="highContrast">High contrast is Off</label>
+        </li>
+        <li title="Increases font size">
+          <input type="checkbox" id="largeFont" autocomplete="off" onClick="toggleQSClasses(this, 'header, header *, .module, .module * ,ul.summary, ul.summaryTight, p, #ReferenceList li a ,blockquote, figcaption ,dd', 'fontGrow');">
+          <label for="largeFont">Large font is Off</label>
+        </li>
+        <li  title="Turns off default behavior where mousing over summary text highlights corresponding text in body">
+          <input type="checkbox" id="hoverHelper" autocomplete="off"  checked="checked"  class="enabled" onClick="toggleQSClasses(this, 'section', 'useHoverHelper');">
+          <label for="hoverHelper">Hover helper is On</label>
+      </ul>
+      <!--Prefchoice has a contextual selector in template.css--> 
+      <!--end Pref Choice: --> 
+    </div>
+    <h3 id="welcomeMessage">Welcome to this QuikScan Views edition of</h3>
+  </div>
+  <!--End of Banner Region. Logo, Preferences, etc-->
+  <h1>Your title your title your title<br>
+  </h1>
+  <h2>First author and perhaps more authors</h2>
+  
+  <h3><em>Publication info</em> goes here.&nbsp;</h3>
+    <img src="images/JeanDaveBullsIsland.jpg" width="612" height="816" alt="Placeholder image" class="graphicBorder, responsive"/>
+  <p>&nbsp; </p>
+  <!-- This link is the global nav to the top of the page, position fixed at lower left. See upnav.css -->
+  <div id="upnav"><a href="#" title="Jump to top of page">&#9650;</a></div>
+  <div id="hide"><a href="javascript:summariesOnly();" class="summariesOnly" title="All you see is the summaries&#8212;all body text hidden">SO</a> </div>
+  <div id="show"><a href="javascript:fullText();" class="fullText enabled" title="You see all summaries and all body text">FT</a> </div>
+  <div id="LinksToSummariesOnlyHideShow">
+    <p style="padding-top: 8px;"><a style="text-decoration:underline;" href="javascript:summariesOnly()" title="All you see is the summaries&#8212;all body text hidden"  target="_blank" onClick="summariesOnly(); return false;" class="summariesOnly">Summaries Only <span style="color:#333;">(SO)</span> </a>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<a style="text-decoration:underline;" href="javascript:fullText()" title="You see all summaries and all body text" class="fullText enabled">Summaries & Full Text <span style="color:#333;">(FT)</span> </a>&nbsp; &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  &nbsp;<a href="SummariesOnly/SummariesOnly.html" title="Displays new page with summaries in paragraph form" target="_blank" style="text-decoration:underline;">All summaries  on new page</a></p>
+  </div>
+</header>
+<!--  The class "module collapsible expanded" needs to have the p tag with the class "sectionNotesFormat" -->
+<section id="TOC" class="module">
+  <p class="sectionNoteFormat"></p>
+  <h1> <a href="Javascript:" title="Click an entry to jump to the corresponding heading. Click a heading to return to the TOC"> <strong><span style="color: #36C;">TABLE OF CONTENTS</span></strong></a></h1>
+  <h1 id="TOC_entry-A"><a href="#Sec_1" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">1</span> Alligators (h1)</a></h1>
+  <h2 id="TOC_entry-B"><a href="#Sec_2" title="Click to jump to this section of document. Click heading to return."><span style="color: #36C">2</span> Anteaters (h2)</a></h2>
+  <h3 id="TOC_entry-C"><a href="#Sec_3" title="Click to jump to this section of document. Click heading to return."><span style="color: #36C">3</span> Axolotls (h3)</a></h3>
+  <h1 id="TOC_entry-D"><a href="#Sec_4" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">4</span> Bats</a> </h1>
+  <h1 id="TOC_entry-E"><a href="#Sec_5" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">5</span> Bears</a></h1>
+  <h1 id="TOC_entry-F"><a href="#Sec_6" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">6</span> Bison</a></h1>
+  <h1 id="TOC_entry-G"><a href="#Sec_7" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">7</span> Cats</a></h1>
+  <h1 id="TOC_entry-H"><a href="#Sec_8" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">8</span> Coyotes</a> </h1>
+  <h1 id="TOC_entry-I"><a href="#Sec_9" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">9 </span>Crocodiles</a></h1>
+  <h1 id="TOC_entry-J"><a href="#Sec_10" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">10 </span>Deer</a> </h1>
+  <h1 id="TOC_entry-K"><a href="#Sec_11" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">11 </span>Dogs</a> </h1>
+  <h1 id="TOC_entry-L"><a href="#Sec_12" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">12 </span>Ducks</a> </h1>
+  <h1 id="TOC_entry-M"><a href="#Sec_13" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">13 </span>Eagles</a> </h1>
+  <h1 id="TOC_entry-N"><a href="#Sec_14" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">14</span> Eels</a></h1>
+  <h1 id="TOC_entry-O"><a href="#Sec_15" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">15</span> Emus</a> </h1>
+  <h1 id="TOC_entry-P"><a href="#Sec_16" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">16 </span>Falcons</a> </h1>
+  <h1 id="TOC_entry-Q"><a href="#Sec_17" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">17 </span>Ferrets</a> </h1>
+  <h1 id="TOC_entry-R"><a href="#Sec_18" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">18</span> Frogs</a> </h1>
+  <h1 id="TOC_entry-S"><a href="#Sec_19" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">19</span> Geckos</a> </h1>
+  <h1 id="TOC_entry-T"><a href="#Sec_20" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">20</span> Goats</a> </h1>
+  <h1 id="TOC_entry-U"><a href="#Sec_21" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">21</span> Grasshoppers</a> </h1>
+  <h1 id="TOC_entry-V"><a href="#Sec_22" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">22</span> Hamsters</a> </h1>
+  <h1 id="TOC_entry-W"><a href="#Sec_23" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">23</span> Horses</a></h1>
+  <h1 id="TOC_entry-X"><a href="#Sec_24" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">24</span> Hyenas</a></h1>
+  <h1 id="TOC_entry-Y"><a href="#Sec_25" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">25</span> Ibises</a></h1>
+  <h1 id="TOC_entry-Z"><a href="#Sec_26" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">26</span> Iguanas</a></h1>
+  <h1 id="TOC_entry-AA"><a href="#Sec_27" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">27</span> Impalas</a></h1>
+  <h1 id="TOC_entry-BB"><a href="#Sec_28" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">28</span> Jackals</a></h1>
+  <h1 id="TOC_entry-CC"><a href="#Sec_29" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">29</span> Jaguars</a></h1>
+  <h1 id="TOC_entry-DD"><a href="#Sec_30" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">30</span> Jellyfish</a></h1>
+  <h1 id="TOC_entry-EE"><a href="#InstructionalModule" title="Click to jump to this section of document. Click heading to return."><span style="color: #E1BD2B;">Using Compound Summaries</span></a></h1>
+  <h1 id="TOC_entry-FF"><a href="#Sec_31" title="Click to jump to this section of document. Click heading to return."> <span style="color: #36C">31</span> Kangaroos, Kingfishers, and Koalas</a></h1>
+  <h1 id="TOC_entry-GG"><a href="#Sec_32" title="Click to jump to this section of document. Click heading to return.">References</a></h1>
+</section>
+<!-- Sec 1 --> 
+<!-- Sec 1 --> 
+<!-- Sec 1 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec1-1L"></span> 
+  <!-- DON'T DELETE sectionNotesFormat. It is needed by summariesOnly.js  -->
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead1" title="Click to display notes for this section" id="Sec_1">Notes&raquo;&nbsp; </a></p>
+  <!--  -->
+  <h1><a href="#TOC_entry-A" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Alligators&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 1 (h1)</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec1-1P">1 Alligators are happy.</a></li>
+    <li><a href="#Sec1-2P">2 Alligators are healthy.</a></li>
+    <li><a href="#Sec1-3P">3 Alligators are wealthy.</a></li>
+    <li><a href="#Sec1-4P">4 Alligators are wise.</a></li>
+    <li><a href="#Sec1-5P">5 Alligators are nifty.</a></li>
+    <li><a href="#Sec1-6P">6 Alligators are thrifty.</a></li>
+  </ul>
+  <p><span  id="Sec1-1P"></span><a href="#Sec1-1L">&#9650;1&nbsp;</a>Alligators are very happy animals.</p>
+  <p><span  id="Sec1-2P"></span><a href="#Sec1-1L">&#9650;2&nbsp;</a>Alligators are very healthy animals.</p>
+  <p><span  id="Sec1-3P"></span><a href="#Sec1-1L">&#9650;3&nbsp;</a>Alligators are very wealthy animals.</p>
+  <p><span  id="Sec1-4P"></span><a href="#Sec1-1L">&#9650;4&nbsp;</a>Alligators are very wise animals.</p>
+  <p><span  id="Sec1-5P"></span><a href="#Sec1-1L">&#9650;5&nbsp;</a>Alligators are very nifty animals.</p>
+  <p><span  id="Sec1-6P"></span><a href="#Sec1-1L">&#9650;6&nbsp;</a>Alligators are very thrifty animals.</p>
+</section>
+<!-- Sec 2 --> 
+<!-- Sec 2 --> 
+<!-- Sec 2 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec2-1L"></span> 
+  <!-- -->
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead2" title="There are no notes for this section" id="Sec_2">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h2><a href="#TOC_entry-B" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Anteaters&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 2 (h2)</span></a></h2>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec2-1P">1 Anteaters are happy.</a></li>
+    <li><a href="#Sec2-2P">2 Anteaters are healthy.</a></li>
+    <li><a href="#Sec2-3P">3 Anteaters are wealthy.</a></li>
+    <li><a href="#Sec2-4P">4 Anteaters are wise.</a></li>
+    <li><a href="#Sec2-5P">5 Anteaters are nifty.</a></li>
+    <li><a href="#Sec2-6P">6 Anteaters are thrifty.</a></li>
+  </ul>
+  <!--The id numbers for images allow customization. -->
+  <figure> <img id="figure-1" class="responsive" src="images/spider.jpg" alt="Big spider in my front yard">
+    <figcaption><em>Big spider on lamp post in my front yard</em>.</figcaption>
+  </figure>
+  <!-- -->
+  <p><span id="Sec2-1P"></span><a href="#Sec2-1L">&#9650;1&nbsp;</a>Anteaters are very happy animals.</p>
+  <p><span id="Sec2-2P"></span><a href="#Sec2-1L">&#9650;2&nbsp;</a>Anteaters are very healthy animals.</p>
+  <p><span  id="Sec2-3P"></span><a href="#Sec2-1L">&#9650;3&nbsp;</a>Anteaters are very wealthy animals.</p>
+  <ol>
+    <li>Sample ordered list</li>
+    <li>A second entry</li>
+  </ol>
+  <h1>Sample heading</h1>
+  <p><span id="Sec2-4P"></span><a href="#Sec2-1L">&#9650;4&nbsp;</a>Anteaters are very wise animals.</p>
+  <p><span id="Sec2-5P"></span><a href="#Sec2-1L">&#9650;5&nbsp;</a>Anteaters are very nifty animals.</p>
+  <p><span id="Sec2-6P"></span><a href="#Sec2-1L">&#9650;6&nbsp;</a>Anteaters are very thrifty animals.</p>
+</section>
+<!-- Sec 3 --> 
+<!-- Sec 3 --> 
+<!-- Sec 3 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec3-1L"></span> 
+  <!-- -->
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead3" title="Click to display notes for this section" id="Sec_3">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h3><a href="#TOC_entry-C" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Axolotls&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 3 (h3)</span></a></h3>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec3-1P">1 Axolotls are happy.</a></li>
+    <li><a href="#Sec3-2P">2 Axolotls are healthy.</a></li>
+    <li><a href="#Sec3-3P">3 Axolotls are wealthy.</a></li>
+    <li><a href="#Sec3-4P">4 Axolotls are wise.</a></li>
+    <li><a href="#Sec3-5P">5 Axolotls are nifty.</a></li>
+    <li><a href="#Sec3-6P">6 Axolotls are thrifty.</a></li>
+  </ul>
+  <!--  -->
+  <p><span id="Sec3-1P"></span><a href="#Sec3-1L">&#9650;1&nbsp;</a>Axolotls are very happy animals.</p>
+  <p><span id="Sec3-2P"></span><a href="#Sec3-1L">&#9650;2&nbsp;</a>Axolotls are very healthy animals.</p>
+  <p><span id="Sec3-3P"></span><a href="#Sec3-1L">&#9650;3&nbsp;</a>Axolotls are very wealthy animals.</p>
+  <p><span id="Sec3-4P"></span><a href="#Sec3-1L">&#9650;4&nbsp;</a>Axolotls are very wise animals.</p>
+  <p><span id="Sec3-5P"></span><a href="#Sec3-1L">&#9650;5&nbsp;</a>Axolotls are very nifty animals.</p>
+  <p><span id="Sec3-6P"></span><a href="#Sec3-1L">&#9650;6&nbsp;</a>Axolotls are very thrifty animals.</p>
+</section>
+<!-- Sec 4 --> 
+<!-- Sec 4 --> 
+<!-- Sec 4 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec4-1L"></span> 
+  <!-- -->
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead4" title="Click to display notes for this section" id="Sec_4">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-D" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Bats&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 4</span></a></h1>
+  <!--  -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec4-1P">1 Bats are happy.</a></li>
+    <li><a href="#Sec4-2P">2 Bats are healthy.</a></li>
+    <li><a href="#Sec4-3P">3 Bats are wealthy.</a></li>
+    <li><a href="#Sec4-4P">4 Bats are wise.</a></li>
+    <li><a href="#Sec4-5P">5 Bats are nifty.</a></li>
+    <li><a href="#Sec4-6P">6 Bats are thrifty.</a></li>
+  </ul>
+  <!--  -->
+  <p><span id="Sec4-1P"></span><a href="#Sec4-1L">&#9650;1&nbsp;</a>Bats are very happy animals.</p>
+  <p><span id="Sec4-2P"></span><a href="#Sec4-1L">&#9650;2&nbsp;</a>Bats are very healthy animals.</p>
+  <p><span id="Sec4-3P"></span><a href="#Sec4-1L">&#9650;3&nbsp;</a>Bats are very wealthy animals.</p>
+  <p><span id="Sec4-4P"></span><a href="#Sec4-1L">&#9650;4&nbsp;</a>Bats are very wise animals.</p>
+  <p><span id="Sec4-5P"></span><a href="#Sec4-1L">&#9650;5&nbsp;</a>Bats are very nifty animals.</p>
+  <p><span id="Sec4-6P"></span><a href="#Sec4-1L">&#9650;6&nbsp;</a>Bats are very thrifty animals.</p>
+</section>
+<!-- Sec 5 --> 
+<!-- Sec 5 --> 
+<!-- Sec 5 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec5-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead5" title="Click to display notes for this section" id="Sec_5">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1> <a href="#TOC_entry-E" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Bears&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 5</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec5-1P">1 Bears are happy.</a></li>
+    <li><a href="#Sec5-2P">2 Bears are healthy.</a></li>
+    <li><a href="#Sec5-3P">3 Bears are wealthy.</a></li>
+    <li><a href="#Sec5-4P">4 Bears are wise.</a></li>
+    <li><a href="#Sec5-5P">5 Bears are nifty.</a></li>
+    <li><a href="#Sec5-6P">6 Bears are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec5-1P"></span><a href="#Sec5-1L">&#9650;1&nbsp;</a>Bears are very happy animals.</p>
+  <p><span id="Sec5-2P"></span><a href="#Sec5-1L">&#9650;2&nbsp;</a>Bears are very healthy animals.</p>
+  <p><span id="Sec5-3P"></span><a href="#Sec5-1L">&#9650;3&nbsp;</a>Bears are very wealthy animals.</p>
+  <p><span id="Sec5-4P"></span><a href="#Sec5-1L">&#9650;4&nbsp;</a>Bears are very wise animals.</p>
+  <p><span id="Sec5-5P"></span><a href="#Sec5-1L">&#9650;5&nbsp;</a>Bears are very nifty animals.</p>
+  <p><span id="Sec5-6P"></span><a href="#Sec5-1L">&#9650;6&nbsp;</a>Bears are very thrifty animals.</p>
+</section>
+<!-- Sec 6 --> 
+<!-- Sec 6 --> 
+<!-- Sec 6 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec6-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead6" title="Click to display notes for this section" id="Sec_6">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-F" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Bison&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 6</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec6-1P">1 Bison are happy.</a></li>
+    <li><a href="#Sec6-2P">2 Bison are healthy.</a></li>
+    <li><a href="#Sec6-3P">3 Bison are wealthy.</a></li>
+    <li><a href="#Sec6-4P">4 Bison are wise.</a></li>
+    <li><a href="#Sec6-5P">5 Bison are nifty.</a></li>
+    <li><a href="#Sec6-6P">6 Bison are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec6-1P"></span><a href="#Sec6-1L">&#9650;1&nbsp;</a>Bison are very happy animals.</p>
+  <p><span id="Sec6-2P"></span><a href="#Sec6-1L">&#9650;2&nbsp;</a>Bison are very healthy animals.</p>
+  <p><span id="Sec6-3P"></span><a href="#Sec6-1L">&#9650;3&nbsp;</a>Bison are very wealthy animals.</p>
+  <p><span id="Sec6-4P"></span><a href="#Sec6-1L">&#9650;4&nbsp;</a>Bison are very wise animals.</p>
+  <p><span id="Sec6-5P"></span><a href="#Sec6-1L">&#9650;5&nbsp;</a>Bison are very nifty animals.</p>
+  <p><span id="Sec6-6P"></span><a href="#Sec6-1L">&#9650;6&nbsp;</a>Bison are very thrifty animals.</p>
+  <p>&nbsp;</p>
+  <!--The id numbers for images allow customization. -->
+  <figure> <img src="images/Figure12-1.jpg" class="responsive" alt="Executive summary example with table of research questions." /> </figure>
+</section>
+<!-- Sec 7 --> 
+<!-- Sec 7 --> 
+<!-- Sec 7 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec7-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead7" title="Click to display notes for this section" id="Sec_7">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-G" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Cats&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 7</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec7-1P">1 Cats are happy.</a></li>
+    <li><a href="#Sec7-2P">2 Cats are healthy.</a></li>
+    <li><a href="#Sec7-3P">3 Cats are wealthy.</a></li>
+    <li><a href="#Sec7-4P">4 Cats are wise.</a></li>
+    <li><a href="#Sec7-5P">5 Cats are nifty.</a></li>
+    <li><a href="#Sec7-6P">6 Cats are thrifty.</a></li>
+  </ul>
+  <!-- -->
+  <p><span id="Sec7-1P"></span><a href="#Sec7-1L">&#9650;1&nbsp;</a>Cats are very happy animals.</p>
+  <p><span id="Sec7-2P"></span><a href="#Sec7-1L">&#9650;2&nbsp;</a>Cats are very healthy animals.</p>
+  <p><span id="Sec7-3P"></span><a href="#Sec7-1L">&#9650;3&nbsp;</a>Cats are very wealthy animals.</p>
+  <p><span id="Sec7-4P"></span><a href="#Sec7-1L">&#9650;4&nbsp;</a>Cats are very wise animals.</p>
+  <p><span id="Sec7-5P"></span><a href="#Sec7-1L">&#9650;5&nbsp;</a>Cats are very nifty animals.</p>
+  <p><span id="Sec7-6P"></span><a href="#Sec7-1L">&#9650;6&nbsp;</a>Cats are very thrifty animals.</p>
+</section>
+<!-- Sec 8 --> 
+<!-- Sec 8 --> 
+<!-- Sec 8 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec8-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead8" title="Click to display notes for this section" id="Sec_8">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-H" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Coyotes&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 8</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec8-1P">1 Coyotes are happy.</a></li>
+    <li><a href="#Sec8-2P">2 Coyotes are healthy.</a></li>
+    <li><a href="#Sec8-3P">3 Coyotes are wealthy.</a></li>
+    <li><a href="#Sec8-4P">4 Coyotes are wise.</a></li>
+    <li><a href="#Sec8-5P">5 Coyotes are nifty.</a></li>
+    <li><a href="#Sec8-6P">6 Coyotes are thrifty.</a></li>
+  </ul>
+  <!--  -->
+  <p><span id="Sec8-1P"></span><a href="#Sec8-1L">&#9650;1&nbsp;</a>Coyotes are very happy animals.</p>
+  <p><span id="Sec8-2P"></span><a href="#Sec8-1L">&#9650;2&nbsp;</a>Coyotes are very healthy animals.</p>
+  <p><span id="Sec8-3P"></span><a href="#Sec8-1L">&#9650;3&nbsp;</a>Coyotes are very wealthy animals.</p>
+  <p><span id="Sec8-4P"></span><a href="#Sec8-1L">&#9650;4&nbsp;</a>Coyotes are very wise animals.</p>
+  <p><span id="Sec8-5P"></span><a href="#Sec8-1L">&#9650;5&nbsp;</a>Coyotes are very nifty animals.</p>
+  <p><span id="Sec8-6P"></span><a href="#Sec8-1L">&#9650;6&nbsp;</a>Coyotes are very thrifty animals.</p>
+</section>
+<!-- Sec 9 --> 
+<!-- Sec 9 --> 
+<!-- Sec 9 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec9-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead9" title="Click to display notes for this section" id="Sec_9">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-I" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Crocodiles&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 9</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec9-1P">1 Crocodiles are happy.</a></li>
+    <li><a href="#Sec9-2P">2 Crocodiles are healthy.</a></li>
+    <li><a href="#Sec9-3P">3 Crocodiles are wealthy.</a></li>
+    <li><a href="#Sec9-4P">4 Crocodiles are wise.</a></li>
+    <li><a href="#Sec9-5P">5 Crocodiles are nifty.</a></li>
+    <li><a href="#Sec9-6P">6 Crocodiles are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec9-1P"></span><a href="#Sec9-1L">&#9650;1&nbsp;</a>Crocodiles are very happy animals.</p>
+  <p><span id="Sec9-2P"></span><a href="#Sec9-1L">&#9650;2&nbsp;</a>Crocodiles are very healthy animals.</p>
+  <p><span id="Sec9-3P"></span><a href="#Sec9-1L">&#9650;3&nbsp;</a>Crocodiles are very wealthy animals.</p>
+  <p><span id="Sec9-4P"></span><a href="#Sec9-1L">&#9650;4&nbsp;</a>Crocodiles are very wise animals.</p>
+  <p><span id="Sec9-5P"></span><a href="#Sec9-1L">&#9650;5&nbsp;</a>Crocodiles are very nifty animals.</p>
+  <p><span id="Sec9-6P"></span><a href="#Sec9-1L">&#9650;6&nbsp;</a>Crocodiles are very thrifty animals.</p>
+</section>
+<!-- Sec 10 --> 
+<!-- Sec 10 --> 
+<!-- Sec 10 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec10-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead10" title="Click to display notes for this section" id="Sec_10">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-J" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Deer&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 10</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec10-1P">1 Deer are happy.</a></li>
+    <li><a href="#Sec10-2P">2 Deer are healthy.</a></li>
+    <li><a href="#Sec10-3P">3 Deer are wealthy.</a></li>
+    <li><a href="#Sec10-4P">4 Deer are wise.</a></li>
+    <li><a href="#Sec10-5P">5 Deer are nifty.</a></li>
+    <li><a href="#Sec10-6P">6 Deer are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec10-1P"></span><a href="#Sec10-1L">&#9650;1&nbsp;</a>Deer are very happy animals.</p>
+  <p><span id="Sec10-2P"></span><a href="#Sec10-1L">&#9650;2&nbsp;</a>Deer are very healthy animals.</p>
+  <p><span id="Sec10-3P"></span><a href="#Sec10-1L">&#9650;3&nbsp;</a>Deer are very wealthy animals.</p>
+  <p><span id="Sec10-4P"></span><a href="#Sec10-1L">&#9650;4&nbsp;</a>Deer are very wise animals.</p>
+  <p><span id="Sec10-5P"></span><a href="#Sec10-1L">&#9650;5&nbsp;</a>Deer are very nifty animals.</p>
+  <p><span id="Sec10-6P"></span><a href="#Sec10-1L">&#9650;6&nbsp;</a>Deer are very thrifty animals.</p>
+</section>
+<!-- Sec 11 --> 
+<!-- Sec 11 --> 
+<!-- Sec 11 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec11-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead11" title="Click to display notes for this section" id="Sec_11">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-K" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Dogs&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 11</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec11-1P">1 Dogs are happy.</a></li>
+    <li><a href="#Sec11-2P">2 Dogs are healthy.</a></li>
+    <li><a href="#Sec11-3P">3 Dogs are wealthy.</a></li>
+    <li><a href="#Sec11-4P">4 Dogs are wise.</a></li>
+    <li><a href="#Sec11-5P">5 Dogs are nifty.</a></li>
+    <li><a href="#Sec11-6P">6 Dogs are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec11-1P"></span><a href="#Sec11-1L">&#9650;1&nbsp;</a>Dogs are very happy animals.</p>
+  <p><span id="Sec11-2P"></span><a href="#Sec11-1L">&#9650;2&nbsp;</a>Dogs are very healthy animals.</p>
+  <p><span id="Sec11-3P"></span><a href="#Sec11-1L">&#9650;3&nbsp;</a>Dogs are very wealthy animals.</p>
+  <p><span id="Sec11-4P"></span><a href="#Sec11-1L">&#9650;4&nbsp;</a>Dogs are very wise animals.</p>
+  <p><span id="Sec11-5P"></span><a href="#Sec11-1L">&#9650;5&nbsp;</a>Dogs are very nifty animals.</p>
+  <p><span id="Sec11-6P"></span><a href="#Sec11-1L">&#9650;6&nbsp;</a>Dogs are very thrifty animals.</p>
+</section>
+<!-- Sec 12 --> 
+<!-- Sec 12 --> 
+<!-- Sec 12 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec12-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead12" title="Click to display notes for this section" id="Sec_12">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-L" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Ducks&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 12</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec12-1P">1 Ducks are happy.</a></li>
+    <li><a href="#Sec12-2P">2 Ducks are healthy.</a></li>
+    <li><a href="#Sec12-3P">3 Ducks are wealthy.</a></li>
+    <li><a href="#Sec12-4P">4 Ducks are wise.</a></li>
+    <li><a href="#Sec12-5P">5 Ducks are nifty.</a></li>
+    <li><a href="#Sec12-6P">6 Ducks are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec12-1P"></span><a href="#Sec12-1L">&#9650;1&nbsp;</a>Ducks are very happy animals.</p>
+  <p><span id="Sec12-2P"></span><a href="#Sec12-1L">&#9650;2&nbsp;</a>Ducks are very healthy animals.</p>
+  <p><span id="Sec12-3P"></span><a href="#Sec12-1L">&#9650;3&nbsp;</a>Ducks are very wealthy animals.</p>
+  <p><span id="Sec12-4P"></span><a href="#Sec12-1L">&#9650;4&nbsp;</a>Ducks are very wise animals.</p>
+  <p><span id="Sec12-5P"></span><a href="#Sec12-1L">&#9650;5&nbsp;</a>Ducks are very nifty animals.</p>
+  <p><span id="Sec12-6P"></span><a href="#Sec12-1L">&#9650;6&nbsp;</a>Ducks are very thrifty animals.</p>
+</section>
+<!-- Sec 13 --> 
+<!-- Sec 13 --> 
+<!-- Sec 13 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec13-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead13" title="Click to display notes for this section" id="Sec_13">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-M" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Eagles&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 13</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec13-1P">1 Eagles are happy.</a></li>
+    <li><a href="#Sec13-2P">2 Eagles are healthy.</a></li>
+    <li><a href="#Sec13-3P">3 Eagles are wealthy.</a></li>
+    <li><a href="#Sec13-4P">4 Eagles are wise.</a></li>
+    <li><a href="#Sec13-5P">5 Eagles are nifty.</a></li>
+    <li><a href="#Sec13-6P">6 Eagles are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec13-1P"></span><a href="#Sec13-1L">&#9650;1&nbsp;</a>Eagles are very happy animals.</p>
+  <p><span id="Sec13-2P"></span><a href="#Sec13-1L">&#9650;2&nbsp;</a>Eagles are very healthy animals.</p>
+  <p><span id="Sec13-3P"></span><a href="#Sec13-1L">&#9650;3&nbsp;</a>Eagles are very wealthy animals.</p>
+  <p><span id="Sec13-4P"></span><a href="#Sec13-1L">&#9650;4&nbsp;</a>Eagles are very wise animals.</p>
+  <p><span id="Sec13-5P"></span><a href="#Sec13-1L">&#9650;5&nbsp;</a>Eagles are very nifty animals.</p>
+  <p><span id="Sec13-6P"></span><a href="#Sec13-1L">&#9650;6&nbsp;</a>Eagles are very thrifty animals.</p>
+</section>
+<!-- Sec 14 --> 
+<!-- Sec 14 --> 
+<!-- Sec 14 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec14-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead14" title="Click to display notes for this section" id="Sec_14">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-N" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Eels&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 14</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec14-1P">1 Eels are happy.</a></li>
+    <li><a href="#Sec14-2P">2 Eels are healthy.</a></li>
+    <li><a href="#Sec14-3P">3 Eels are wealthy.</a></li>
+    <li><a href="#Sec14-4P">4 Eels are wise.</a></li>
+    <li><a href="#Sec14-5P">5 Eels are nifty.</a></li>
+    <li><a href="#Sec14-6P">6 Eels are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec14-1P"></span><a href="#Sec14-1L">&#9650;1&nbsp;</a>Eels are very happy animals.</p>
+  <p><span id="Sec14-2P"></span><a href="#Sec14-1L">&#9650;2&nbsp;</a>Eels are very healthy animals.</p>
+  <p><span id="Sec14-3P"></span><a href="#Sec14-1L">&#9650;3&nbsp;</a>Eels are very wealthy animals.</p>
+  <p><span id="Sec14-4P"></span><a href="#Sec14-1L">&#9650;4&nbsp;</a>Eels are very wise animals.</p>
+  <p><span id="Sec14-5P"></span><a href="#Sec14-1L">&#9650;5&nbsp;</a>Eels are very nifty animals.</p>
+  <p><span id="Sec14-6P"></span><a href="#Sec14-1L">&#9650;6&nbsp;</a>Eels are very thrifty animals.</p>
+</section>
+<!-- Sec 15 --> 
+<!-- Sec 15 --> 
+<!-- Sec 15 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec15-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead15" title="Click to display notes for this section" id="Sec_15">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-O" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Emus&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 15</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec15-1P">1 Emus are happy.</a></li>
+    <li><a href="#Sec15-2P">2 Emus are healthy.</a></li>
+    <li><a href="#Sec15-3P">3 Emus are wealthy.</a></li>
+    <li><a href="#Sec15-4P">4 Emus are wise.</a></li>
+    <li><a href="#Sec15-5P">5 Emus are nifty.</a></li>
+    <li><a href="#Sec15-6P">6 Emus are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec15-1P"></span><a href="#Sec15-1L">&#9650;1&nbsp;</a>Emus are very happy animals.</p>
+  <p><span id="Sec15-2P"></span><a href="#Sec15-1L">&#9650;2&nbsp;</a>Emus are very healthy animals.</p>
+  <p><span id="Sec15-3P"></span><a href="#Sec15-1L">&#9650;3&nbsp;</a>Emus are very wealthy animals.</p>
+  <p><span id="Sec15-4P"></span><a href="#Sec15-1L">&#9650;4&nbsp;</a>Emus are very wise animals.</p>
+  <p><span id="Sec15-5P"></span><a href="#Sec15-1L">&#9650;5&nbsp;</a>Emus are very nifty animals.</p>
+  <p><span id="Sec15-6P"></span><a href="#Sec15-1L">&#9650;6&nbsp;</a>Emus are very thrifty animals.</p>
+</section>
+<!-- Sec 16 --> 
+<!-- Sec 16 --> 
+<!-- Sec 16 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec16-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead16" title="Click to display notes for this section" id="Sec_16">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-P" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Falcons&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 16</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec16-1P">1 Falcons are happy.</a></li>
+    <li><a href="#Sec16-2P">2 Falcons are healthy.</a></li>
+    <li><a href="#Sec16-3P">3 Falcons are wealthy.</a></li>
+    <li><a href="#Sec16-4P">4 Falcons are wise.</a></li>
+    <li><a href="#Sec16-5P">5 Falcons are nifty.</a></li>
+    <li><a href="#Sec16-6P">6 Falcons are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec16-1P"></span><a href="#Sec16-1L">&#9650;1&nbsp;</a>Falcons are very happy animals.</p>
+  <p><span id="Sec16-2P"></span><a href="#Sec16-1L">&#9650;2&nbsp;</a>Falcons are very healthy animals.</p>
+  <p><span id="Sec16-3P"></span><a href="#Sec16-1L">&#9650;3&nbsp;</a>Falcons are very wealthy animals.</p>
+  <p><span id="Sec16-4P"></span><a href="#Sec16-1L">&#9650;4&nbsp;</a>Falcons are very wise animals.</p>
+  <p><span id="Sec16-5P"></span><a href="#Sec16-1L">&#9650;5&nbsp;</a>Falcons are very nifty animals.</p>
+  <p><span id="Sec16-6P"></span><a href="#Sec16-1L">&#9650;6&nbsp;</a>Falcons are very thrifty animals.</p>
+</section>
+<!-- Sec 17 --> 
+<!-- Sec 17 --> 
+<!-- Sec 17 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec17-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead17" title="Click to display notes for this section" id="Sec_17">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-Q" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Ferrets&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 17</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec17-1P">1 Ferrets are happy.</a></li>
+    <li><a href="#Sec17-2P">2 Ferrets are healthy.</a></li>
+    <li><a href="#Sec17-3P">3 Ferrets are wealthy.</a></li>
+    <li><a href="#Sec17-4P">4 Ferrets are wise.</a></li>
+    <li><a href="#Sec17-5P">5 Ferrets are nifty.</a></li>
+    <li><a href="#Sec17-6P">6 Ferrets are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec17-1P"></span><a href="#Sec17-1L">&#9650;1&nbsp;</a>Ferrets are very happy animals.</p>
+  <P><span id="Sec17-2P"></span><a href="#Sec17-1L">&#9650;2&nbsp;</a>Ferrets are very healthy animals.</p>
+  <p><span id="Sec17-3P"></span><a href="#Sec17-1L">&#9650;3&nbsp;</a>Ferrets are very wealthy animals.</p>
+  <p><span id="Sec17-4P" ></span><a href="#Sec17-1L">&#9650;4&nbsp;</a>Ferrets are very wise animals.</p>
+  <p><span id="Sec17-5P" ></span><a href="#Sec17-1L">&#9650;5&nbsp;</a>Ferrets are very nifty animals.</p>
+  <p><span id="Sec17-6P" ></span><a href="#Sec17-1L">&#9650;6&nbsp;</a>Ferrets are very thrifty animals.</p>
+</section>
+<!-- Sec 18 --> 
+<!-- Sec 18 --> 
+<!-- Sec 18 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec18-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead18" title="Click to display notes for this section" id="Sec_18">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-R" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Frogs&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 18</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec18-1P">1 Frogs are happy.</a></li>
+    <li><a href="#Sec18-2P">2 Frogs are healthy.</a></li>
+    <li><a href="#Sec18-3P">3 Frogs are wealthy.</a></li>
+    <li><a href="#Sec18-4P">4 Frogs are wise.</a></li>
+    <li><a href="#Sec18-5P">5 Frogs are nifty.</a></li>
+    <li><a href="#Sec18-6P">6 Frogs are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec18-1P"></span><a href="#Sec18-1L">&#9650;1&nbsp;</a>Frogs are very happy animals.</p>
+  <p><span id="Sec18-2P"></span><a href="#Sec18-1L">&#9650;2&nbsp;</a>Frogs are very healthy animals.</p>
+  <p><span id="Sec18-3P"></span><a href="#Sec18-1L">&#9650;3&nbsp;</a>Frogs are very wealthy animals.</p>
+  <p><span id="Sec18-4P"></span><a href="#Sec18-1L">&#9650;4&nbsp;</a>Frogs are very wise animals.</p>
+  <p><span id="Sec18-5P"></span><a href="#Sec18-1L">&#9650;5&nbsp;</a>Frogs are very nifty animals.</p>
+  <p><span id="Sec18-6P"></span><a href="#Sec18-1L">&#9650;6&nbsp;</a>Frogs are very thrifty animals.</p>
+</section>
+<!-- Sec 19 --> 
+<!-- Sec 19 --> 
+<!-- Sec 19 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec19-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead19" title="Click to display notes for this section" id="Sec_19">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-S" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Geckos&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 19</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec19-1P">1 Geckos are happy.</a></li>
+    <li><a href="#Sec19-2P">2 Geckos are healthy.</a></li>
+    <li><a href="#Sec19-3P">3 Geckos are wealthy.</a></li>
+    <li><a href="#Sec19-4P">4 Geckos are wise.</a></li>
+    <li><a href="#Sec19-5P">5 Geckos are nifty.</a></li>
+    <li><a href="#Sec19-6P">6 Geckos are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec19-1P"></span><a href="#Sec19-1L">&#9650;1&nbsp;</a>Geckos are very happy animals.</p>
+  <p><span id="Sec19-2P"></span><a href="#Sec19-1L">&#9650;2&nbsp;</a>Geckos are very healthy animals.</p>
+  <p><span id="Sec19-3P"></span><a href="#Sec19-1L">&#9650;3&nbsp;</a>Geckos are very wealthy animals.</p>
+  <p><span id="Sec19-4P"></span><a href="#Sec19-1L">&#9650;4&nbsp;</a>Geckos are very wise animals.</p>
+  <p><span id="Sec19-5P"></span><a href="#Sec19-1L">&#9650;5&nbsp;</a>Geckos are very nifty animals.</p>
+  <p><span id="Sec19-6P"></span><a href="#Sec19-1L">&#9650;6&nbsp;</a>Geckos are very thrifty animals.</p>
+</section>
+<!-- Sec 20 --> 
+<!-- Sec 20 --> 
+<!-- Sec 20 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec20-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead20" title="Click to display notes for this section" id="Sec_20">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-T" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Goats&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 20</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec20-1P">1 Goats are happy.</a></li>
+    <li><a href="#Sec20-2P">2 Goats are healthy.</a></li>
+    <li><a href="#Sec20-3P">3 Goats are wealthy.</a></li>
+    <li><a href="#Sec20-4P">4 Goats are wise.</a></li>
+    <li><a href="#Sec20-5P">5 Goats are nifty.</a></li>
+    <li><a href="#Sec20-6P">6 Goats are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec20-1P"></span><a href="#Sec20-1L">&#9650;1&nbsp;</a>Goats are very happy animals.</p>
+  <p><span id="Sec20-2P"></span><a href="#Sec20-1L">&#9650;2&nbsp;</a>Goats are very healthy animals.</p>
+  <p><span id="Sec20-3P"></span><a href="#Sec20-1L">&#9650;3&nbsp;</a>Goats are very wealthy animals.</p>
+  <p><span id="Sec20-4P"></span><a href="#Sec20-1L">&#9650;4&nbsp;</a>Goats are very wise animals./p>
+  
+  <p><span id="Sec20-5P"></span><a href="#Sec20-1L">&#9650;5&nbsp;</a>Goats are very nifty animals.</p>
+  <p><span id="Sec20-6P"></span><a href="#Sec20-1L">&#9650;6&nbsp;</a>Goats are very thrifty animals.</p>
+</section>
+<!-- Sec 21 --> 
+<!-- Sec 21 --> 
+<!-- Sec 21 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec21-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead21" title="Click to display notes for this section" id="Sec_21">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-U" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Grasshoppers&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 21</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec21-1P">1 Grasshoppers are happy.</a></li>
+    <li><a href="#Sec21-2P">2 Grasshoppers are healthy.</a></li>
+    <li><a href="#Sec21-3P">3 Grasshoppers are wealthy.</a></li>
+    <li><a href="#Sec21-4P">4 Grasshoppers are wise.</a></li>
+    <li><a href="#Sec21-5P">5 Grasshoppers are nifty.</a></li>
+    <li><a href="#Sec21-6P">6 Grasshoppers are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec21-1P"></span><a href="#Sec21-1L">&#9650;1&nbsp;</a>Grasshoppers are very happy animals.</p>
+  <p><span id="Sec21-2P"></span><a href="#Sec21-1L">&#9650;2&nbsp;</a>Grasshoppers are very healthy animals.</p>
+  <p><span id="Sec21-3P"></span><a href="#Sec21-1L">&#9650;3&nbsp;</a>Grasshoppers are very wealthy animals.</p>
+  <p><span id="Sec21-4P"></span><a href="#Sec21-1L">&#9650;4&nbsp;</a>Grasshoppers are very wise animals.</p>
+  <p><span id="Sec21-5P"></span><a href="#Sec21-1L">&#9650;5&nbsp;</a>Grasshoppers are very nifty animals.</p>
+  <p><span id="Sec21-6P"></span><a href="#Sec21-1L">&#9650;6&nbsp;</a>Grasshoppers are very thrifty animals.</p>
+</section>
+<!-- Sec 22 --> 
+<!-- Sec 22 --> 
+<!-- Sec 22 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec22-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead22" title="Click to display notes for this section" id="Sec_22">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-V" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Hamsters&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 22</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec22-1P">1 Hamsters are happy.</a></li>
+    <li><a href="#Sec22-2P">2 Hamsters are healthy.</a></li>
+    <li><a href="#Sec22-3P">3 Hamsters are wealthy.</a></li>
+    <li><a href="#Sec22-4P">4 Hamsters are wise.</a></li>
+    <li><a href="#Sec22-5P">5 Hamsters are nifty.</a></li>
+    <li><a href="#Sec22-6P">6 Hamsters are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec22-1P"></span><a href="#Sec22-1L">&#9650;1&nbsp;</a>Hamsters are very happy animals.</p>
+  <p><span id="Sec22-2P"></span><a href="#Sec22-1L">&#9650;2&nbsp;</a>Hamsters are very healthy animals.</p>
+  <p><span id="Sec22-3P"></span><a href="#Sec22-1L">&#9650;3&nbsp;</a>Hamsters are very wealthy animals.</p>
+  <p><span id="Sec22-4P"></span><a href="#Sec22-1L">&#9650;4&nbsp;</a>Hamsters are very wise animals.</p>
+  <p><span id="Sec22-5P"></span><a href="#Sec22-1L">&#9650;5&nbsp;</a>Hamsters are very nifty animals.</p>
+  <p><span id="Sec22-6P"></span><a href="#Sec22-1L">&#9650;6&nbsp;</a>Hamsters are very thrifty animals.</p>
+</section>
+<!-- Sec 23 --> 
+<!-- Sec 23 --> 
+<!-- Sec 23 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec23-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead23" title="Click to display notes for this section" id="Sec_23">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-W" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Horses&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 23</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec23-1P">1 Horses are happy.</a></li>
+    <li><a href="#Sec23-2P">2 Horses are healthy.</a></li>
+    <li><a href="#Sec23-3P">3 Horses are wealthy.</a></li>
+    <li><a href="#Sec23-4P">4 Horses are wise.</a></li>
+    <li><a href="#Sec23-5P">5 Horses are nifty.</a></li>
+    <li><a href="#Sec23-6P">6 Horses are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec23-1P"></span><a href="#Sec23-1L">&#9650;1&nbsp;</a>Horses are very happy animals.</p>
+  <p><span id="Sec23-2P"></span><a href="#Sec23-1L">&#9650;2&nbsp;</a>Horses are very healthy animals.</p>
+  <p><span id="Sec23-3P"></span><a href="#Sec23-1L">&#9650;3&nbsp;</a>Horses are very wealthy animals.</p>
+  <p><span id="Sec23-4P"></span><a href="#Sec23-1L">&#9650;4&nbsp;</a>Horses are very wise animals.</p>
+  <p><span id="Sec23-5P"></span><a href="#Sec23-1L">&#9650;5&nbsp;</a>Horses are very nifty animals.</p>
+  <p><span id="Sec23-6P"></span><a href="#Sec23-1L">&#9650;6&nbsp;</a>Horses are very thrifty animals.</p>
+</section>
+<!-- Sec 24 --> 
+<!-- Sec 24 --> 
+<!-- Sec 24 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec24-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead24" title="Click to display notes for this section" id="Sec_24">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-X" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Hyenas&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 24</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec24-1P">1 Hyenas are happy.</a></li>
+    <li><a href="#Sec24-2P">2 Hyenas are healthy.</a></li>
+    <li><a href="#Sec24-3P">3 Hyenas are wealthy.</a></li>
+    <li><a href="#Sec24-4P">4 Hyenas are wise.</a></li>
+    <li><a href="#Sec24-5P">5 Hyenas are nifty.</a></li>
+    <li><a href="#Sec24-6P">6 Hyenas are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec24-1P"></span><a href="#Sec24-1L">&#9650;1&nbsp;</a>Hyenas are very happy animals.</p>
+  <p><span id="Sec24-2P"></span><a href="#Sec24-1L">&#9650;2&nbsp;</a>Hyenas are very healthy animals.</p>
+  <p><span id="Sec24-3P"></span><a href="#Sec24-1L">&#9650;3&nbsp;</a>Hyenas are very wealthy animals.</p>
+  <p><span id="Sec24-4P"></span><a href="#Sec24-1L">&#9650;4&nbsp;</a>Hyenas are very wise animals.</p>
+  <p><span id="Sec24-5P"></span><a href="#Sec24-1L">&#9650;5&nbsp;</a>Hyenas are very nifty animals.</p>
+  <p><span id="Sec24-6P"></span><a href="#Sec24-1L">&#9650;6&nbsp;</a>Hyenas are very thrifty animals.</p>
+</section>
+<!-- Sec 25 --> 
+<!-- Sec 25 --> 
+<!-- Sec 25 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec25-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead25" title="Click to display notes for this section" id="Sec_25">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-Y" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Ibises&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 25</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec25-1P">1 Ibises are happy.</a></li>
+    <li><a href="#Sec25-2P">2 Ibises are healthy.</a></li>
+    <li><a href="#Sec25-3P">3 Ibises are wealthy.</a></li>
+    <li><a href="#Sec25-4P">4 Ibises are wise.</a></li>
+    <li><a href="#Sec25-5P">5 Ibises are nifty.</a></li>
+    <li><a href="#Sec25-6P">6 Ibises are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec25-1P"></span><a href="#Sec25-1L">&#9650;1&nbsp;</a>Ibises are very happy animals.</p>
+  <p><span id="Sec25-2P"></span><a href="#Sec25-1L">&#9650;2&nbsp;</a>Ibises are very healthy animals.</p>
+  <p><span id="Sec25-3P"></span><a href="#Sec25-1L">&#9650;3&nbsp;</a>Ibises are very wealthy animals.</p>
+  <p><span id="Sec25-4P"></span><a href="#Sec25-1L">&#9650;4&nbsp;</a>Ibises are very wise animals.</p>
+  <p><span id="Sec25-5P"></span><a href="#Sec25-1L">&#9650;5&nbsp;</a>Ibises are very nifty animals.</p>
+  <p><span id="Sec25-6P"></span><a href="#Sec25-1L">&#9650;6&nbsp;</a>Ibises are very thrifty animals.</p>
+  <!-- Sec 26 --> 
+  <!-- Sec 26 --> 
+  <!-- Sec 26 --> 
+</section>
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec26-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead26" title="Click to display notes for this section" id="Sec_26">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-Z" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Iguanas&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 26</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec26-1P">1 Iguanas are happy.</a></li>
+    <li><a href="#Sec26-2P">2 Iguanas are healthy.</a></li>
+    <li><a href="#Sec26-3P">3 Iguanas are wealthy.</a></li>
+    <li><a href="#Sec26-4P">4 Iguanas are wise.</a></li>
+    <li><a href="#Sec26-5P">5 Iguanas are nifty.</a></li>
+    <li><a href="#Sec26-6P">6 Iguanas are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec26-1P"></span><a href="#Sec26-1L">&#9650;1&nbsp;</a>Iguanas are very happy animals.</p>
+  <p><span id="Sec26-2P"></span><a href="#Sec26-1L">&#9650;2&nbsp;</a>Iguanas are very healthy animals.</p>
+  <p><span id="Sec26-3P"></span><a href="#Sec26-1L">&#9650;3&nbsp;</a>Iguanas are very wealthy animals.</p>
+  <p><span id="Sec26-4P"></span><a href="#Sec26-1L">&#9650;4&nbsp;</a>Iguanas are very wise animals.</p>
+  <p><span id="Sec26-5P"></span><a href="#Sec26-1L">&#9650;5&nbsp;</a>Iguanas are very nifty animals.</p>
+  <p><span id="Sec26-6P"></span><a href="#Sec26-1L">&#9650;6&nbsp;</a>Iguanas are very thrifty animals.</p>
+</section>
+<!-- Sec 27 --> 
+<!-- Sec 27 --> 
+<!-- Sec 27 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec27-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead27" title="Click to display notes for this section" id="Sec_27">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-AA" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Impalas&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 27</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec27-1P">1 Impalas are happy.</a></li>
+    <li><a href="#Sec27-2P">2 Impalas are healthy.</a></li>
+    <li><a href="#Sec27-3P">3 Impalas are wealthy.</a></li>
+    <li><a href="#Sec27-4P">4 Impalas are wise.</a></li>
+    <li><a href="#Sec27-5P">5 Impalas are nifty.</a></li>
+    <li><a href="#Sec27-6P">6 Impalas are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec27-1P"></span><a href="#Sec27-1L">&#9650;1&nbsp;</a>Impalas are very happy animals.</p>
+  <p><span id="Sec27-2P"></span><a href="#Sec27-1L">&#9650;2&nbsp;</a>Impalas are very healthy animals.</p>
+  <p><span id="Sec27-3P"></span><a href="#Sec27-1L">&#9650;3&nbsp;</a>Impalas are very wealthy animals.</p>
+  <p><span id="Sec27-4P"></span><a href="#Sec27-1L">&#9650;4&nbsp;</a>Impalas are very wise animals.</p>
+  <p><span id="Sec27-5P"></span><a href="#Sec27-1L">&#9650;5&nbsp;</a>Impalas are very nifty animals.</p>
+  <p><span id="Sec27-6P"></span><a href="#Sec27-1L">&#9650;6&nbsp;</a>Impalas are very thrifty animals.</p>
+</section>
+<!-- Sec 28 --> 
+<!-- Sec 28 --> 
+<!-- Sec 28 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec28-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead28" title="Click to display notes for this section" id="Sec_28">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-BB" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Jackals&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 28</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec28-1P">1 Jackals are happy.</a></li>
+    <li><a href="#Sec28-2P">2 Jackals are healthy.</a></li>
+    <li><a href="#Sec28-3P">3 Jackals are wealthy.</a></li>
+    <li><a href="#Sec28-4P">4 Jackals are wise.</a></li>
+    <li><a href="#Sec28-5P">5 Jackals are nifty.</a></li>
+    <li><a href="#Sec28-6P">6 Jackals are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec28-1P"></span><a href="#Sec28-1L">&#9650;1&nbsp;</a>Jackals are very happy animals.</p>
+  <p><span id="Sec28-2P"></span><a href="#Sec28-1L">&#9650;2&nbsp;</a>Jackals are very healthy animals.</p>
+  <p><span id="Sec28-3P"></span><a href="#Sec28-1L">&#9650;3&nbsp;</a>Jackals are very wealthy animals.</p>
+  <p><span id="Sec28-4P"></span><a href="#Sec28-1L">&#9650;4&nbsp;</a>Jackals are very wise animals.</p>
+  <p><span id="Sec28-5P"></span><a href="#Sec28-1L">&#9650;5&nbsp;</a>Jackals are very nifty animals.</p>
+  <p><span id="Sec28-6P"></span><a href="#Sec28-1L">&#9650;6&nbsp;</a>Jackals are very thrifty animals.</p>
+</section>
+<!-- Sec 29 --> 
+<!-- Sec 29 --> 
+<!-- Sec 29 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec29-1L"></span>
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead29" title="Click to display notes for this section" id="Sec_29">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-CC" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Jaguars&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 29</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec29-1P">1 Jaguars are happy.</a></li>
+    <li><a href="#Sec29-2P">2 Jaguars are healthy.</a></li>
+    <li><a href="#Sec29-3P">3 Jaguars are wealthy.</a></li>
+    <li><a href="#Sec29-4P">4 Jaguars are wise.</a></li>
+    <li><a href="#Sec29-5P">5 Jaguars are nifty.</a></li>
+    <li><a href="#Sec29-6P">6 Jaguars are thrifty.</a></li>
+  </ul>
+  <p><span id="Sec29-1P"></span><a href="#Sec29-1L">&#9650;1&nbsp;</a>Jaguars are very happy animals.</p>
+  <p><span id="Sec29-2P"></span><a href="#Sec29-1L">&#9650;2&nbsp;</a>Jaguars are very healthy animals.</p>
+  <p><span id="Sec29-3P"></span><a href="#Sec29-1L">&#9650;3&nbsp;</a>Jaguars are very wealthy animals.</p>
+  <p><span id="Sec29-4P"></span><a href="#Sec29-1L">&#9650;4&nbsp;</a>Jaguars are very wise animals.</p>
+  <p><span id="Sec29-5P"></span><a href="#Sec29-1L">&#9650;5&nbsp;</a>Jaguars are very nifty animals.</p>
+  <p><span id="Sec29-6P"></span><a href="#Sec29-1L">&#9650;6&nbsp;</a>Jaguars are very thrifty animals.</p>
+</section>
+<!-- Sec 30 --> 
+<!-- Sec 30 --> 
+<!-- Sec 30 -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec30-1L"></span> 
+  <!-- Because this is the last section, the id has been moved to the bottom of the section so that section can display at top of browser -->
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead30" title="Click to display notes for this section" id="Sec_30">Notes&raquo;&nbsp; </a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-DD" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Jellyfish&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 30</span></a></h1>
+  <!-- -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li><a href="#Sec30-1P">1 Jellyfish are happy.</a></li>
+    <li><a href="#Sec30-2P">2 Jellyfish are healthy.</a></li>
+    <li><a href="#Sec30-3P">3 Jellyfish are wealthy.</a></li>
+    <li><a href="#Sec30-4P">4 Jellyfish are wise.</a></li>
+    <li><a href="#Sec30-5P">5 Jellyfish are nifty.</a></li>
+    <li><a href="#Sec30-6P">6 Jellyfish are thrifty.</a></li>
+  </ul>
+  <!--  Moved id to bottom of this, the final section,  section so that it can be displayed at the top of the browser --> 
+  <!-- <div id="Sec_30"></div>-->
+  <p><span id="Sec30-1P"></span><a href="#Sec30-1L">&#9650;1&nbsp;</a>Jellyfish are very happy animals.</p>
+  <p><span id="Sec30-2P"></span><a href="#Sec30-1L">&#9650;2&nbsp;</a>Jellyfish are very healthy animals.</p>
+  <p><span id="Sec30-3P"></span><a href="#Sec30-1L">&#9650;3&nbsp;</a>Jellyfish are very wealthy animals.</p>
+  <p><span id="Sec30-4P"></span><a href="#Sec30-1L">&#9650;4&nbsp;</a>Jellyfish are very wise animals.</p>
+  <p><span id="Sec30-5P"></span><a href="#Sec30-1L">&#9650;5&nbsp;</a>Jellyfish are very nifty animals.</p>
+  <p><span id="Sec30-6P"></span><a href="#Sec30-1L">&#9650;6&nbsp;</a>Jellyfish are very thrifty animals.</p>
+</section>
+<section class="instructionsModule">
+  <h2 id="InstructionalModule"><a href="#TOC_entry-EE" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>Using Compound Summaries with short sections of a text&nbsp;&nbsp;&nbsp;</a></h2>
+  <p>Some texts include two or more short sections (headings with just a little text under them). In this situation, you may prefer a simpler, more streamlined alternative to the standard QuikScan summary. This is the &#8220;Compound Summary.&#8221; The HTML for compound summaries appears in the next section of this template. The basic idea is that multiple short sections are formatted as one QuikScan section. </p>
+  <p> Here is how it works:</p>
+  <p>The heading of the section, placed inside square brackets, is a brief summary of the short sections that you write. You might phrase the heading &#8220;About . . .&#8221;</p>
+  <p>Each of the numbered list items that comprises the summary is a brief summary of one of the short sections. Notice that the numbering scheme differs from the standard QuikScan Views numbering scheme and that there is no linking from list items to body text and no hover behavior.</p>
+  <p>In the Summaries Only view, the reader reads just the summaries of the short sections. In the Full Text view, the full text is displayed.</p>
+
+</section>
+<!-- Sec 31 --> 
+<!-- Sec 31 --> 
+<!-- Sec 31 -->
+<section class="module collapsible expanded no-first-letter"> 
+  <!--Target for upward links from each of the sections of target text --> 
+  <span id="Sec31-1L"></span> 
+  <!-- Because this is the last section, the id has been moved to the bottom of the section so that section can display at top of browser -->
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead31" title="Click to display notes for this section" id="Sec_31">Notes&raquo;&nbsp;</a></p>
+  <h1><a href="#TOC_entry-FF" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>[About Kangaroos, Kingfishers and Koalas]&nbsp;&nbsp;&nbsp;<span class="ModHeadSec">Sec 31</span></a></h1>
+  <!-- xx -->
+  <ul class="summary">
+    <!--ID at top of section-->
+    <li>Sec 31-1: Summary of short section about Kangaroos</li>
+    <li>Sec 31-2: Summary of short section about Kingfishers</li>
+    <li>Sec 31-3: Summary of short section about Koalas</li>
+    <li></li>
+  </ul>
+  <!--  Moved id to bottom of this, the final section,  section so that it can be displayed at the top of the browser -->
+  <h2>Short section about Kangaroos</h2>
+  <p>Here is the text of a short section of the text about Kangaroos.</p>
+  <h2>Short section about Kingfishers</h2>
+  <p>Here is the text of a short section of the text about Kingfishers.</p>
+  <h2>Short section about Koalas</h2>
+  <p>Here is the text of a short section of the text about Koalas.</p>
+</section>
+
+<!-- Sec 32 References --> 
+<!-- Sec 32 References --> 
+<!-- Sec 32 References -->
+<section class="module collapsible expanded"> 
+  <!--Target for upward links from each of the sections of target text--> 
+  <span id="Sec32-1L"></span> 
+  <p class="sectionNoteFormat"><a href="Notes/Notes.html#NotesHead31" title="Click to display notes for this section" id="Sec_32">&nbsp;</a></p>
+  <!-- -->
+  <h1><a href="#TOC_entry-M" title="Jumps back to Table of Contents. Check the box to hide/show body text."><span class="VerticalArrow"> &uarr;&nbsp;&nbsp;</span>References</a>&nbsp;&nbsp;</h1>
+  <ul class="summary">
+    <!--ID at top of section-->
+  </ul>
+  <ol>
+    <li class="refItemFormat"><a id="Ref1"></a><a href="#TextCite1-4">Curb JD, Ford C, Hawkins CM, Smith EO, Zimbaldi N, Carter B, Cooper C. A coordinating center in a clinical trial: the Hypertension Detection and Followup Program. Control Clin Trials. 1983;4:171-86.</a></li>
+    <li class="refItemFormat"><a id="Ref2"></a><a href="#TextCite1-4">Meinert  CL, Heinz EC, Forman SA. Role and Methods of the Coordinating Center. Control  Clin Trial. 1983;4:355-375.</a></li>
+    <li class="refItemFormat"><a id="Ref3"></a><a href="#TextCite1-4">Collins JF, Martin S, Kent E, Liuni C, Garg R, Egan D. The use of regional coordinating centers in large clinical trials: the DIG trial. Control Clin Trial. 
+      2003;24:298S-305S.</a></li>
+    <li class="refItemFormat"><a id="Ref4"></a><a href="#TextCite1-4">Blumenstein BA, James KE, Lind BK, Mitchell HE. Functions and Organization of Coordinating Centers for Multicenter Studies. Control Clin Trials. 1995;16:4S-29S.</a></li>
+    <li class="refItemFormat"><a id="Ref5"></a><a href="#TextCite5">Potter, JD. Cohort Summary for Pacific Health Summit Brochure 2008.</a></li>
+    <li class="refItemFormat"><a id="Ref6"></a><a href="#TextCite6">Asiacohort.org [Internet]. Seattle: The Asia Cohort Consortium [cited 2011 July 8]. Available from: http://www.asiacohort.org.</a></li>
+    <li class="refItemFormat"><a id="Ref7"></a><a href="#TextCite7"> Wenger E, McDermott R, Snyder WM. Cultivating Communities of Practice. Boston, Mass.: Harvard Business School Press; 2002.</a></li>
+    <li class="refItemFormat"> <a id="Ref8"></a><a href="#TextCite8">Lawrence, K. Walking the Tightrope: The Balancing Acts of a Large e-Research Project. Computer Supported Cooperative Work. 2006;15:385-411.</a></li>
+    <li class="refItemFormat"> <a id="Ref9"></a><a href="#TextCite9">Fortier I, Burton PR, Robson PJ, Ferretti V, Little J, L'Heureux F, et al. Quality, quantity and harmony: the DataSHaPER approach to integrating data across bioclinical studies. International Journal of Epidemiology. 2010;39:1383–1393.</a></li>
+    <li class="refItemFormat"> <a id="Ref10"></a><a href="#TextCite10">Zheng W, McLerran DF, Rolland B, Zhang X, Inoue M, Matsuo K, et al. Body Mass Index and Mortality in Over 1 Million Asian Persons. N Engl J Med. 2011;364:719-729.</a></li>
+  </ol>
+</section>
+<footer>
+  <p>&nbsp;&nbsp;QuikScan is in the public domain. Make your own QuikScan texts. &nbsp;<a href="http://quikscan.org" title="Learn QuikScan.org">QuikScan.org</a></p>
+</footer>
+<!-- </section> --> 
+
+<script type="text/javascript" src="summariesOnly.js"></script>
+</body>
+</html>
+<!-- Javascript coding by Chris Elko -->

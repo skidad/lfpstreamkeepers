@@ -1,0 +1,404 @@
+/*class "focus" Not currently in use*/ 
+
+
+/* -------------- STRUCTURE */
+
+html {
+	max-height: 100000000px;
+}
+body {
+	background-color: #dddddb;
+	color: #000;
+	background-image: url('images/bgtile.jpg');
+	/*max-width: 1100px;*/
+	width: 90%;
+	margin: 0 auto;
+}
+header {
+	padding: 5px 5px 5px 5px;
+	color: #603;
+}
+/* -------------- DISPLAY */
+
+
+
+
+.module {
+	background-color: #fbfbfa;
+	border: 1px solid #bbb;
+	/*max width was disabled because doing so improved behavior with mobile devices*/
+	/*max-width: 1000px;*/
+	color: #000;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 0px;
+}
+/*  Formats instruction boxes. Added to module Not part of the final QuikScan Views text  Not currently in use  */
+.instructionsModule {
+	background-color: #FFC;
+	border: 1px solid #bbb;
+	border-radius: 15px;
+	/*max width was disabled because doing so improved behavior with mobile devices*/
+	/*max-width: 1000px;*/
+	color: #000;
+	/*padding: 15px;*/
+	/*padding: 8px 15px 2px;*/
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 0px;
+	/* [disabled]padding-bottom: 0px;
+*/
+	/*margin: 15px;*/
+	margin-top: 8px;
+	margin-bottom: 4px;
+	margin-left: 15px;
+	margin-right: 15px;/*background-color: #FFC;
+	border: thin solid #933;
+	*/
+}
+.summary {
+	background-color: #ecede9;
+	border: 1px solid #bbb;
+	color: #000;
+	list-style-type: none;
+	padding-left: 1em;
+	padding-right: 1 em;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/*  The "summaryTight" class decreases padding for short summaries */
+.summaryTight {
+	background-color: #ecede9;
+	border: 1px solid #bbb;
+	color: #000;
+	list-style-type: none;
+	padding: 8px;
+	margin-left: -16px;
+	margin-right: -16px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+/*  Formats the text in the upper right of each section that indicates the section number. This text hyperlinks to the "Summaries Only" page */
+.sectionNumberFormat {
+	text-align: right;
+	font-size: .8 em;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+/* -------------- FIGURES */
+
+
+
+
+/*Removes border from QuikScan logo*/
+a img {
+	border: none;
+}
+figure {
+	width: 90%;
+	margin-left: 0;/*min-width: 200px;*/
+}
+img.responsive {
+	max-width: 100%;
+	height: auto;
+	border: thin solid #000;
+}
+figcaption {
+	color: #039;
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	text-align: left;
+	font-size: 16 px;
+}
+/* You can customize each figure with an individual id
+#figure-1 {
+	
+}
+
+
+
+
+
+/*Needed or figure bleeds off page
+figure img {
+	width: 100%;
+	padding-right: 0 !important;
+}
+*/
+
+
+
+/*  ImageDivhack prevents a graphic from floating outside of its module.*/
+.clearBoth {
+	clear: both;
+}
+/* -------------- LINKS */
+
+
+header a:link, header a:visited {
+	/*color: inherit;*/
+	color: #000;
+	text-decoration: none;
+}
+header a:hover, header a:active {
+	color: #268bd2;
+}
+section a:link, section a:visited, section a:active {
+	color: #323d47;
+	padding-bottom: 0px;
+	margin: 0;
+	text-decoration: none;
+}
+section a:hover, section.useHoverHelper a.hoverHelper {
+	/* border-bottom: 2px dotted #ccc; */
+	color: #268bd2;
+	padding-bottom: 1px;
+	text-decoration: none;
+}
+#LinksToSummariesOnlyHideShow a {
+	color: #36C;
+	font-size: 16px;
+	padding-bottom: 0;
+	padding-top: 5px;
+}
+#SummariesHideShowSpaceAdder {
+	background-color: transparent;
+	border-color: transparent;
+	margin: 0;
+	padding: 0;
+}
+#SummariesHideShowSpaceAdder ul {
+	display: none;
+}
+#welcomeMessage {
+	color: #C03;
+	padding-top: 10px;
+	padding-bottom: 0;
+}
+.VerticalArrow {
+	font-size: 20px;
+	/* color:#36c;  */
+	opacity: 0.6;
+}
+.ModHeadSec {
+	font-size: 14px;
+	margin-right: 12px;
+}
+/* -------------- TABLE OF CONTENTS */
+
+
+	
+	
+
+
+#TOC {
+	border: medium solid #36C;
+}
+#TOC h1 a {
+ font-family: font-family: "Roboto", Verdana, Arial, sans-serif;
+	font-size: 3 rem;
+	padding-bottom: 3px;
+	border-bottom: 0;
+	margin: 0;
+}
+section #TOC h2 a {
+ font-family: font-family: "Roboto", Verdana, Arial, sans-serif;
+	font-size: 2 rem;
+	padding-left: 55px;
+	padding-bottom: 0;
+	margin: 0;
+}
+section #TOC h3 a {
+ font-family: font-family: "Roboto", Verdana, Arial, sans-serif;
+	font-size: 1.2 rem;
+	padding-left: 90px;
+	padding-bottom: 0;
+	padding-top: 0;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 18px;
+	margin: 0;
+}
+#TOC p {
+	padding-top: 0;
+	margin-top: 0;
+	padding-bottom: 0;
+	padding-top: 0 px;
+	margin-bottom: 0px;
+}
+/*Adds some spacing before "TABLE OF CONTENT" heading at the top of the TOO   */
+#TOC h1:first-of-type {
+	padding-top: 12px;
+}
+/*   You can add extra space below last TOC entry by specifying h3 (like here) or h2, or h1, depending on what level of heading is the last TOC entry. Otherwise, comment this out */
+#TOC h3:last-of-type {
+	padding-bottom: 12px;
+}
+/* -------------- TEXT */
+
+
+
+.blueText {
+	color: #36C;
+}
+header h1, header h2, header h3 {
+	font-family: "Roboto", Verdana, Arial, sans-serif;
+	padding-bottom: 6px;
+	margin: 0 auto;
+}
+section h1, section h2, section h3 {
+	color: #323d47;
+	font-family: "Roboto", Verdana, Arial, sans-serif;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 700;
+	line-height: 32px;
+	text-align: left;
+}
+section h1 {
+	font-size: 1.6em;
+}
+section h2 {
+	font-size: 1.4em;/*color: #096;*/
+}
+section h3 {
+	font-size: 1em;
+	color: #000;
+	line-height: 24px;
+}
+p, dd, ul {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: left;
+	list-style-type: square;
+}
+p {
+	line-height: 21px;
+}
+dd, ul {
+	line-height: 23px;
+}
+dt {
+	font-family: "Roboto", Verdana, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 23px;
+	text-align: left;
+}
+blockquote {
+	border-left: 5px solid #ddd;
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 23px;
+	padding-left: 10px;
+	text-align: left;
+}
+.SimulateOrderedList {
+	/*list-style-type:none;*/
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: left;/*Adding line height had unintended effect of doubling the numbers in the ref. list*????/
+	line-height: 1.8;
+	/*line-height: 1.5 em;*/
+}
+#ReferenceList ol {
+}
+#ReferenceList li {
+	font-family: "Open Sans", Verdana, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 23px;
+	padding-bottom: 8px;
+	text-align: left;
+}
+section #TOC {
+	/*color:#0FC;*/
+	border: medium solid #36C;
+"
+}
+/* -------------- SPACING */
+
+
+#document-content h2 {
+	margin: 0;
+}
+.module dd {
+	/*margin: 0px 0px 6px 20px;*/
+	margin: 0 0 1em 0.7em;
+}
+.summary li {
+	padding-bottom: 7px;
+}
+/*
+section > ul li a.summary::lastline {
+	padding-bottom: 0
+}
+*/
+
+
+ul.summary li:first-child {
+	padding-top: 12px;
+}
+/*
+ul.summary li a:first-line {
+	font-size: 50px;
+	padding-top: 70px;
+	margin-top: 84px;
+}
+*/
+
+
+/* -------------------- Viewing Options CSS */
+
+
+
+/*Makes rectangular border around modules. Tags are still necessary in HTML in order for ".contrastt" Preferences to work*/
+/*#wrapColor {
+	padding: 5px 10px 10px;
+	border: 1px solid black;
+	/*border-top: 0;*/
+	/*overflow: auto;
+	background-color: #f0f0ed !important;		
+}
+*/
+
+
+/*
+/*  This is a class that's added by the toggleQSClasses function in the file "toggleQSClasses.js It toggles high contrast on or off for the Preferences feature.*/
+.contrast {
+	background-color: yellow;
+	border-color: black;
+}
+/*
+/*  This is a class that's added by the toggleQSClasses function in the file "toggleQSClasses.js It toggles the larger font size on or off for the Preferences feature.*/
+.fontGrow {
+	font-size: 20px;
+}
+/*
+/*  This class indents the links "High contrast is Off", "Large font On Off", and "Hover Helper is On" within the Preferences feature */
+#prefChoice p a {
+	padding-left: 6.5%;
+}
+/*
+/* Used to space out the links at the top and also in the TOC  */
+.barspacer {
+	margin-right: 2%;
+}
+.underscore {
+	color: #930;
+	text-decoration: underline;
+}
+/* Used to style the number at the beginning of list items
+ * Will only work for 0 through 9, because it styles one 
+ * character, and bigger numbers have 2 digits                  
+ */
+section > ul.summary > li:first-letter {
+	font-size: 100%;
+	color: #603;
+}

@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+/* Controls appearance and behavior of side global navigation.  */
+
+.showhide {
+	
+}
+
+#show {
+	position: fixed;
+	left: 0%;
+	padding-left: 0%;
+	/* padding-left: 8.5px; */
+	padding-top: 50px;
+	padding-bottom: 0;
+	bottom: 65px;
+	width: 26px;
+	height: 70px;
+	/* Increasing height from 50 increased target area of link */
+	z-index: 7;
+	NOTclip: rect(auto,auto,35px,auto);
+	color: #36C;
+	font-family: "Roboto", Verdana, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	margin-right: 30px;
+}
+#hide {
+	position: fixed;
+	left: 0%;
+	padding-left: 0%;
+	/*	padding-left: 10px; */
+	bottom: 140px;
+	width: 28px;
+	height: 80px;
+	z-index: 7;
+	NOTclip: rect(auto,auto,35px,auto);
+	color: #36C;
+	font-family: "Roboto", Verdana, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	margin-right: 30px;
+}
+#hideshow a {
+	text-decoration: none;
+}
+
+
+/* Controls appearance of top and side UI for collapsing and showing full text (SO and FT) */
+      .summariesOnly.enabled,
+      .fullText.enabled  {
+		border: 1px solid transparent;
+		background-color: transparent;
+		padding: 3px;
+   }
+    .summariesOnly.enabled,
+    .fullText.enabled  {
+		border-color: currentColor;
+		background-color: white;
+   }
+	#show a,
+    #hide a {
+		display: block;
+		text-align: center;
+		cursor: pointer;
+	}
+
+
+/*  Applies to all collapsed and expanded styles */
+section.collapsed > ul ~ * {
+	display: none;
+}
+
+
+/* Controls behavior of checkboxes for local navigation */
+/*  Place checkbox two elements down. Find sectionNoteFormat, get whatever comes next. Put checkbox after whatever comes next. */
+
+/*
+section > .sectionNoteFormat+* {
+	cursor:crosshair;
+	
+}
+*/
+section > .sectionNoteFormat+*:after {
+	background-image: url("images/checkbox.png");
+	display: inline-block;
+	height: 19px;
+	width: 19px;
+	margin-left: 0.25em;
+	vertical-align: middle;
+	color: transparent;
+}
+
+section.collapsed > .sectionNoteFormat+*:after {
+	background-position: 0px  -19px;
+	content:"not checked";
+}
+
+section.expanded > .sectionNoteFormat+*:after {
+	background-image: url("images/checkbox.png");
+	content:"checked";
+}
+
