@@ -1,10 +1,13 @@
-gittop <- "c:/Users/Derek/Documents/lfpstreamkeepers.git"
+gittop <- "c:/Users/Derek/Documents/github/lfpstreamkeepers"
 setwd( gittop )
+dir()
+getwd()
 system("R CMD build LFPStreamKeepersData")
+install.packages("XLConnect", lib="c:/users/derek/R_USER_LIB")
 install.packages("XLConnect")
 detach("package:LFPStreamKeepersData",unload=TRUE)
-install.packages("LFPStreamKeepersData_0.3-0.tar.gz", type="source" )
-
+install.packages("LFPStreamKeepersData_0.3-1.tar.gz", type="source", lib="C:/users/derek/R_LIBS_USER" )
+search()
 
 ###############################
 # Produce png's for website.
@@ -87,7 +90,8 @@ print(x, quote=FALSE, right=TRUE)
 library( LFPStreamKeepersData )
 options(width=100)
 qd <- lfpskLoadQualityData()
-qualData <- as.matrix(format(subset(qd, Date == "1/18/2014" )))
+qualData <- as.matrix(format(subset(qd, Date == " 1/17/2015" )))
 rownames(qualData) <- rep("", nrow(qualData))
 print(qualData, quote=FALSE, right=TRUE)
 
+qd
