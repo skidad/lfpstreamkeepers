@@ -5,6 +5,7 @@ getwd()
 system("R CMD build LFPStreamKeepersData")
 install.packages("XLConnect", lib="c:/users/derek/R_USER_LIB")
 install.packages("XLConnect")
+# note that XLConnect requires Java
 detach("package:LFPStreamKeepersData",unload=TRUE)
 install.packages("LFPStreamKeepersData_0.3-1.tar.gz", type="source", lib="C:/users/derek/R_LIBS_USER" )
 search()
