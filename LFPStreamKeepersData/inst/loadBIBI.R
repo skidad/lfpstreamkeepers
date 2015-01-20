@@ -30,7 +30,14 @@ mcAleerPerkins = readScoringXls( "extdata/BIBI/2010/McAleer\ Creek\ at\ Perkins\
 y2012= list( lyon35th =       readScoringXls( "extdata/BIBI/2012/Lyons\ Creek\ at\ 35th\ 2012\ Scoring.xlsx" ),
 lyon178th =      readScoringXls( "extdata/BIBI/2012/Lyons\ Creek\ at\ 178th\ 2012\ Scoring.xlsx" ),
 mcAleerAcres =   readScoringXls( "extdata/BIBI/2012/Animal_Acres_2012_Scoring.xlsx" ),
-mcAleerPerkins = readScoringXls( "extdata/BIBI/2012/perkins\ way\ 2012\ Scoring.xlsx" )))
+mcAleerPerkins = readScoringXls( "extdata/BIBI/2012/perkins\ way\ 2012\ Scoring.xlsx" )),
+
+y2014= list( lyon35th =       readScoringXls( "extdata/BIBI/2014/Lyon\ at\ 35th\ 2014\ Scoring.xlsx" ),
+lyon178th =      readScoringXls( "extdata/BIBI/2014/McAleer\ Crk\ at\ Animal\ Acres\ 2014\ Scoring.xlsx" ),
+mcAleerAcres =   readScoringXls( "extdata/BIBI/2014/McAleer\ Crk\ at\ Perkins\ 2014\ Scoring.xlsx" ),
+mcAleerPerkins = readScoringXls( "extdata/BIBI/2014/Lyon\ crk\ at\ 178th\ 2014\ Scoring.xlsx" ))
+)
+
 
 ##can we look at 2011 data and see if it is showing same stuff?
 
