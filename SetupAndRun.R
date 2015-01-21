@@ -3,12 +3,30 @@ setwd( gittop )
 dir()
 getwd()
 system("R CMD build LFPStreamKeepersData")
-install.packages("XLConnect", lib="c:/users/derek/R_USER_LIB")
+install.packages("XLConnect", lib="c:/users/derek/R_LIBS_USER")
 install.packages("XLConnect")
 # note that XLConnect requires Java
 detach("package:LFPStreamKeepersData",unload=TRUE)
-install.packages("LFPStreamKeepersData_0.3-1.tar.gz", type="source", lib="C:/users/derek/R_LIBS_USER" )
+install.packages("LFPStreamKeepersData_0.3-2.tar.gz", type="source", lib="C:/users/derek/R_LIBS_USER" )
 search()
+
+###############################
+## Update bibi data, given new spread sheets
+## 1. Check spread sheets in under new year folder in
+##    inst/data/BIBI/
+## add new year to loadBIBI.R
+## Rebuild package
+
+library( LFPStreamKeepersData )
+
+y2014= list(
+lyon35th =       readScoringXls( "extdata/BIBI/2014/Lyon\ at\ 35th\ 2014\ Scoring.xlsx" ),
+lyon178th =      readScoringXls( "extdata/BIBI/2014/Lyon\ crk\ at\ 178th\ 2014\ Scoring.xlsx" ),
+mcAleerAcres =   readScoringXls( "extdata/BIBI/2014/McAleer\ Crk\ at\ Animal\ Acres\ 2014\ Scoring.xlsx" ),
+
+mcAleerPerkins = readScoringXls( "extdata/BIBI/2014/McAleer\ Crk\ at\ Perkins\ 2014\ Scoring.xlsx" )
+)
+
 
 ###############################
 # Produce png's for website.
